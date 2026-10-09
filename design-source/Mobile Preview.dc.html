@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="design_doc_mode" content="canvas">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<style>body{margin:0;background:#E9E1CF;font-family:'Poppins',sans-serif}a{color:#1C1410;text-decoration:none}a:hover{color:#1C1410}</style>
+</helmet>
+<div style="padding:64px;display:flex;flex-direction:column;gap:96px;width:max-content">
+  <sc-for list="{{ pages }}" as="p" hint-placeholder-count="3">
+    <section style="display:flex;flex-direction:column;gap:20px">
+      <div style="display:flex;align-items:baseline;gap:16px"><span style="font-size:18px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:#1C1410">{{ p.name }}</span><a href="{{ p.src }}" style="font-size:13px;font-weight:600;color:#4A3F37;background:linear-gradient(#1C1410,#1C1410) no-repeat 0 100% / 100% 1px;padding-bottom:2px">Open page</a></div>
+      <div style="display:flex;gap:56px;align-items:flex-start">
+        <div style="display:flex;flex-direction:column;gap:10px"><span style="font-size:13px;font-weight:600;color:#4A3F37">Mobile · 390</span><div style="box-sizing:border-box;width:414px;height:868px;border-radius:48px;border:12px solid #1C1410;overflow:hidden;background:#FBF8F1;flex:0 0 auto"><iframe src="{{ p.src }}" loading="lazy" onLoad="{{ hideSb }}" title="{{ p.name }} mobile" style="width:390px;height:844px;border:0;display:block"></iframe></div></div>
+        <div style="display:flex;flex-direction:column;gap:10px"><span style="font-size:13px;font-weight:600;color:#4A3F37">Tablet · 820</span><div style="box-sizing:border-box;width:852px;height:1212px;border-radius:36px;border:16px solid #1C1410;overflow:hidden;background:#FBF8F1;flex:0 0 auto"><iframe src="{{ p.src }}" loading="lazy" onLoad="{{ hideSb }}" title="{{ p.name }} tablet" style="width:820px;height:1180px;border:0;display:block"></iframe></div></div>
+        <div style="display:flex;flex-direction:column;gap:10px"><span style="font-size:13px;font-weight:600;color:#4A3F37">Desktop · 1440</span><div style="width:1440px;height:900px;border-radius:12px;border:1px solid rgba(28,20,16,0.3);overflow:hidden;background:#FBF8F1;flex:0 0 auto;box-shadow:0 24px 60px -30px rgba(28,20,16,0.35)"><iframe src="{{ p.src }}" loading="lazy" title="{{ p.name }} desktop" style="width:1440px;height:900px;border:0;display:block"></iframe></div></div>
+      </div>
+    </section>
+  </sc-for>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    const list = [
+      ['Home', 'Pitchvilla Website v4.dc.html'], ['About', 'About.dc.html'], ['Apply / Enquire', 'Apply.dc.html'], ['Interview guide', 'Interview Prep.dc.html'],
+      ['Idea Validation', 'Idea Validation.dc.html'], ['Launch Your Startup', 'Launch Your Startup.dc.html'], ['Pitch Deck Creation', 'Pitch Deck Creation.dc.html'],
+      ['Business Strategy', 'Business Strategy.dc.html'], ['Financial Analysis', 'Financial Analysis.dc.html'], ['Digital Marketing', 'Digital Marketing.dc.html'], ['Hiring & Team Building', 'Hiring and Team Building.dc.html'],
+      ['Investor Readiness', 'Investor Readiness.dc.html'], ['Pitch to Investors', 'Pitch to Investors.dc.html'], ['Consulting', 'Pitchvilla Consulting Group.dc.html']
+    ];
+    const hideSb = e => { try { const d = e.target.contentDocument; if (!d) return; const s = d.createElement('style'); s.textContent = 'html,body{scrollbar-width:none !important}html::-webkit-scrollbar,body::-webkit-scrollbar{display:none !important}'; d.head.appendChild(s); } catch (err) {} };
+    return { hideSb, pages: list.map(([name, src]) => ({ name, src })) };
+  }
+}
+</script>
+</body>
+</html>

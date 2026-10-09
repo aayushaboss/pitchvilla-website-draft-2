@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>body{margin:0;background:#FBF8F1;color:#1C1410;font-family:'Poppins',sans-serif;-webkit-font-smoothing:antialiased}a{color:#1C1410;text-decoration:none}a:hover{color:#1C1410}*{box-sizing:border-box}html{scroll-behavior:smooth}input,select,textarea{font-family:inherit;color:inherit}::placeholder{color:rgba(28,20,16,0.4)}h1,h2,h3{text-wrap:pretty}@media (max-width:900px){[data-desk]{display:none !important}[data-pad]{padding-top:56px !important;padding-bottom:56px !important}[data-sticky]{position:static !important}[data-toc]{display:none !important}[data-two]{grid-template-columns:1fr !important}}@media (max-width:760px){[data-hero]{grid-template-columns:1fr !important}}@media (min-width:761px) and (max-width:1100px){[data-two]{grid-template-columns:1fr !important}}[data-dd]:hover>[data-dd-menu],[data-dd]:focus-within>[data-dd-menu]{opacity:1 !important;visibility:visible !important;transform:none !important}[data-dd]:hover>button svg,[data-dd]:focus-within>button svg{transform:rotate(180deg)}details[data-nav] summary::-webkit-details-marker{display:none}details[data-nav][open] [data-bar="1"]{transform:translateY(7px) rotate(45deg)}details[data-nav][open] [data-bar="2"]{opacity:0}details[data-nav][open] [data-bar="3"]{transform:translateY(-7px) rotate(-45deg)}@media (max-width:900px){[data-nav="desk"]{display:none !important}[data-nav="mob"]{display:block !important}}[data-sub]:hover>[data-sub-menu],[data-sub]:focus-within>[data-sub-menu]{opacity:1 !important;visibility:visible !important;transform:none !important}[data-sub]:hover>a,[data-sub]:focus-within>a{background:#F3EDE0}</style>
+</helmet>
+<div style="font-family:'Poppins',sans-serif;color:#1C1410;background:#FBF8F1;overflow-x:clip;position:relative">
+  <div style="position:fixed;inset:0;pointer-events:none;z-index:40;opacity:0.07;mix-blend-mode:multiply;background-image:url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxNjAnIGhlaWdodD0nMTYwJz48ZmlsdGVyIGlkPSduJz48ZmVUdXJidWxlbmNlIHR5cGU9J2ZyYWN0YWxOb2lzZScgYmFzZUZyZXF1ZW5jeT0nMC45JyBudW1PY3RhdmVzPScyJyBzdGl0Y2hUaWxlcz0nc3RpdGNoJy8+PC9maWx0ZXI+PHJlY3Qgd2lkdGg9JzEwMCUnIGhlaWdodD0nMTAwJScgZmlsdGVyPSd1cmwoI24pJy8+PC9zdmc+&quot;)"></div>
+  <header style="position:sticky;top:0;z-index:30;background:#FBF8F1;border-bottom:1px solid rgba(28,20,16,0.2)">
+    <div style="max-width:1280px;margin:0 auto;padding:0 clamp(24px,6vw,96px);height:64px;display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:24px">
+      <a href="Pitchvilla Website v4.dc.html" style="display:flex;align-items:center;gap:10px"><img src="assets/pitchvilla-wordmark.png" alt="Pitchvilla" style="height:15px;width:auto;flex:none;display:block"><span style="white-space:nowrap;font-size:12px;font-weight:500;color:#6B5E54;border-left:1px solid rgba(28,20,16,0.25);padding-left:10px">100X Forge</span></a>
+      <nav data-nav="desk" style="display:flex;gap:40px;font-size:15px;font-weight:500;align-items:center">
+        <a href="Pitchvilla Website v4.dc.html" style="background:linear-gradient(#FFCC00,#FFCC00) no-repeat 0 100% / 0% 3px;transition:background-size .7s cubic-bezier(.22,.61,.36,1);padding:4px 0" style-hover="background-size:100% 3px">Home</a>
+        <div data-dd="1" style="position:relative">
+          <button type="button" style="all:unset;cursor:pointer;display:flex;align-items:center;gap:6px;font-size:15px;font-weight:500;background:linear-gradient(#FFCC00,#FFCC00) no-repeat 0 100% / 0% 3px;transition:background-size .7s cubic-bezier(.22,.61,.36,1);padding:4px 0" style-hover="background-size:100% 3px">About us <svg width="10" height="10" viewBox="0 0 16 16" fill="none" style="transition:transform .3s ease"><path d="M3.5 6l4.5 4.5L12.5 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+          <div data-dd-menu="1" style="position:absolute;top:100%;left:-16px;padding-top:12px;opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .2s ease,transform .25s ease,visibility .2s;z-index:40">
+            <div style="min-width:200px;background:#FBF8F1;border:1px solid rgba(28,20,16,0.14);border-radius:10px;padding:6px;display:flex;flex-direction:column;box-shadow:0 12px 32px -16px rgba(28,20,16,0.3)">
+              <a href="About.dc.html" style="padding:9px 12px;border-radius:6px;font-size:14px;font-weight:500;white-space:nowrap" style-hover="background:#F3EDE0">About Pitchvilla</a>
+              <a href="Interview Prep.dc.html" style="padding:9px 12px;border-radius:6px;font-size:14px;font-weight:500;white-space:nowrap" style-hover="background:#F3EDE0">Interview Guide</a>
+              <a href="Pitchvilla Website v4.dc.html#faq" style="padding:9px 12px;border-radius:6px;font-size:14px;font-weight:500;white-space:nowrap" style-hover="background:#F3EDE0">FAQ</a>
+            </div>
+          </div>
+        </div>
+        <div data-dd="1" style="position:relative">
+          <button type="button" style="all:unset;cursor:pointer;display:flex;align-items:center;gap:6px;font-size:15px;font-weight:500;background:linear-gradient(#FFCC00,#FFCC00) no-repeat 0 100% / 0% 3px;transition:background-size .7s cubic-bezier(.22,.61,.36,1);padding:4px 0" style-hover="background-size:100% 3px">Services <svg width="10" height="10" viewBox="0 0 16 16" fill="none" style="transition:transform .3s ease"><path d="M3.5 6l4.5 4.5L12.5 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+          <div data-dd-menu="1" style="position:absolute;top:100%;left:-16px;padding-top:12px;opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .2s ease,transform .25s ease,visibility .2s;z-index:40">
+            <div style="min-width:180px;background:#FBF8F1;border:1px solid rgba(28,20,16,0.14);border-radius:10px;padding:6px;display:flex;flex-direction:column;box-shadow:0 12px 32px -16px rgba(28,20,16,0.3)">
+              <div data-sub="1" style="position:relative">
+                <a tabindex="0" role="button" style="cursor:default;padding:9px 12px;border-radius:6px;font-size:14px;font-weight:500;white-space:nowrap;display:flex;align-items:center;justify-content:space-between;gap:24px">Launch<svg width="10" height="10" viewBox="0 0 16 16" fill="none"><path d="M6 3.5l4.5 4.5L6 12.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+                <div data-sub-menu="1" style="position:absolute;top:-6px;left:100%;padding-left:8px;opacity:0;visibility:hidden;transform:translateX(-4px);transition:opacity .2s ease,transform .2s ease,visibility .2s;z-index:41">
+                  <div style="min-width:220px;background:#FBF8F1;border:1px solid rgba(28,20,16,0.14);border-radius:10px;padding:6px;display:flex;flex-direction:column;box-shadow:0 12px 32px -16px rgba(28,20,16,0.3)">
+                    <a href="Idea Validation.dc.html" style="padding:9px 12px;border-radius:6px;font-size:14px;font-weight:500;white-space:nowrap" style-hover="background:#F3EDE0">Idea Validation</a>
+                    <a href="Launch Your Startup.dc.html" style="padding:9px 12px;border-radius:6px;font-size:14px;font-weight:500;white-space:nowrap" style-hover="background:#F3EDE0">Launch Your Startup</a>
+                    <a href="Pitch Deck Creation.dc.html" style="padding:9px 12px;border-radius:6px;font-size:14px;font-weight:500;white-space:nowrap" style-hover="background:#F3EDE0">Pitch Deck Creation</a>
+                  </div>
+                </div>
+              </div>
+              <div data-sub="1" style="position:relative">
+                <a tabindex="0" role="button" style="cursor:default;padding:9px 12px;border-radius:6px;font-size:14px;font-weight:500;white-space:nowrap;display:flex;align-items:center;justify-content:space-between;gap:24px">Grow<svg width="10" height="10" viewBox="0 0 16 16" fill="none"><path d="M6 3.5l4.5 4.5L6 12.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+                <div data-sub-menu="1" style="position:absolute;top:-6px;left:100%;padding-left:8px;opacity:0;visibility:hidden;transform:translateX(-4px);transition:opacity .2s ease,transform .2s ease,visibility .2s;z-index:41">
+                  <div style="min-width:220px;background:#FBF8F1;border:1px solid rgba(28,20,16,0.14);border-radius:10px;padding:6px;display:flex;flex-direction:column;box-shadow:0 12px 32px -16px rgba(28,20,16,0.3)">
+                    <a href="Business Strategy.dc.html" style="padding:9px 12px;border-radius:6px;font-size:14px;font-weight:500;white-space:nowrap" style-hover="background:#F3EDE0">Business Strategy</a>
+                    <a href="Financial Analysis.dc.html" style="padding:9px 12px;border-radius:6px;font-size:14px;font-weight:500;white-space:nowrap" style-hover="background:#F3EDE0">Financial Analysis</a>
+                    <a href="Digital Marketing.dc.html" style="padding:9px 12px;border-radius:6px;font-size:14px;font-weight:500;white-space:nowrap" style-hover="background:#F3EDE0">Digital Marketing</a>
+                    <a href="Hiring and Team Building.dc.html" style="padding:9px 12px;border-radius:6px;font-size:14px;font-weight:500;white-space:nowrap" style-hover="background:#F3EDE0">Hiring &amp; Team Building</a>
+                  </div>
+                </div>
+              </div>
+              <div data-sub="1" style="position:relative">
+                <a tabindex="0" role="button" style="cursor:default;padding:9px 12px;border-radius:6px;font-size:14px;font-weight:500;white-space:nowrap;display:flex;align-items:center;justify-content:space-between;gap:24px">Raise<svg width="10" height="10" viewBox="0 0 16 16" fill="none"><path d="M6 3.5l4.5 4.5L6 12.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+                <div data-sub-menu="1" style="position:absolute;top:-6px;left:100%;padding-left:8px;opacity:0;visibility:hidden;transform:translateX(-4px);transition:opacity .2s ease,transform .2s ease,visibility .2s;z-index:41">
+                  <div style="min-width:220px;background:#FBF8F1;border:1px solid rgba(28,20,16,0.14);border-radius:10px;padding:6px;display:flex;flex-direction:column;box-shadow:0 12px 32px -16px rgba(28,20,16,0.3)">
+                    <a href="Investor Readiness.dc.html" style="padding:9px 12px;border-radius:6px;font-size:14px;font-weight:500;white-space:nowrap" style-hover="background:#F3EDE0">Investor Readiness</a>
+                    <a href="Pitch to Investors.dc.html" style="padding:9px 12px;border-radius:6px;font-size:14px;font-weight:500;white-space:nowrap" style-hover="background:#F3EDE0">Pitch to Investors</a>
+                  </div>
+                </div>
+              </div>
+              
+              </div>
+          </div>
+        </div>
+      </nav>
+      <a data-nav="desk" href="#form" onClick="{{ pickApply }}" style="justify-self:end;background:#FFCC00;border-radius:8px;padding:10px 18px;font-size:14px;font-weight:600" style-hover="background:#F2BF00">Apply</a>
+      <details data-nav="mob" style="position:relative;display:none;grid-column:3;justify-self:end">
+        <summary aria-label="Menu" style="list-style:none;cursor:pointer;width:44px;height:44px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;margin-right:-10px"><span data-bar="1" style="width:22px;height:2px;border-radius:2px;background:#1C1410;display:block;transition:transform .3s ease,opacity .3s ease"></span><span data-bar="2" style="width:22px;height:2px;border-radius:2px;background:#1C1410;display:block;transition:opacity .2s ease"></span><span data-bar="3" style="width:22px;height:2px;border-radius:2px;background:#1C1410;display:block;transition:transform .3s ease"></span></summary>
+        <div style="position:fixed;top:64px;right:0;bottom:0;width:min(86vw,380px);background:#FBF8F1;border-left:1px solid rgba(28,20,16,0.2);box-shadow:0 0 0 100vmax rgba(28,20,16,0.4);padding:16px 28px 32px;display:flex;flex-direction:column;z-index:50;overflow-y:auto">
+          <a href="Pitchvilla Website v4.dc.html" style="padding:18px 0;border-bottom:1px solid rgba(28,20,16,0.14);font-size:24px;font-weight:600;letter-spacing:-0.02em">Home</a>
+          <div style="padding:18px 0 6px;font-size:12px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#6B5E54">About us</div>
+          <a href="About.dc.html" style="padding:10px 0 10px 14px;font-size:18px;font-weight:500">About Pitchvilla</a>
+          <a href="Interview Prep.dc.html" style="padding:10px 0 10px 14px;font-size:18px;font-weight:500">Interview Guide</a>
+          <a href="Pitchvilla Website v4.dc.html#faq" style="padding:10px 0 18px 14px;font-size:18px;font-weight:500;border-bottom:1px solid rgba(28,20,16,0.14)">FAQ</a>
+          <div style="padding:18px 0 6px;font-size:12px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#6B5E54">Services</div>
+          <details style="padding-left:14px"><summary style="list-style:none;cursor:pointer;padding:10px 0;font-size:18px;font-weight:500;display:flex;justify-content:space-between;align-items:center">Launch<svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M3.5 6l4.5 4.5L12.5 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></summary><div style="display:flex;flex-direction:column;padding:0 0 8px 14px"><a href="Idea Validation.dc.html" style="padding:8px 0;font-size:15px;color:#4A3F37">Idea Validation</a><a href="Launch Your Startup.dc.html" style="padding:8px 0;font-size:15px;color:#4A3F37">Launch Your Startup</a><a href="Pitch Deck Creation.dc.html" style="padding:8px 0;font-size:15px;color:#4A3F37">Pitch Deck Creation</a></div></details>
+          <details style="padding-left:14px"><summary style="list-style:none;cursor:pointer;padding:10px 0;font-size:18px;font-weight:500;display:flex;justify-content:space-between;align-items:center">Grow<svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M3.5 6l4.5 4.5L12.5 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></summary><div style="display:flex;flex-direction:column;padding:0 0 8px 14px"><a href="Business Strategy.dc.html" style="padding:8px 0;font-size:15px;color:#4A3F37">Business Strategy</a><a href="Financial Analysis.dc.html" style="padding:8px 0;font-size:15px;color:#4A3F37">Financial Analysis</a><a href="Digital Marketing.dc.html" style="padding:8px 0;font-size:15px;color:#4A3F37">Digital Marketing</a><a href="Hiring and Team Building.dc.html" style="padding:8px 0;font-size:15px;color:#4A3F37">Hiring &amp; Team Building</a></div></details>
+          <details style="padding-left:14px;border-bottom:1px solid rgba(28,20,16,0.14);padding-bottom:8px"><summary style="list-style:none;cursor:pointer;padding:10px 0;font-size:18px;font-weight:500;display:flex;justify-content:space-between;align-items:center">Raise<svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M3.5 6l4.5 4.5L12.5 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></summary><div style="display:flex;flex-direction:column;padding:0 0 8px 14px"><a href="Investor Readiness.dc.html" style="padding:8px 0;font-size:15px;color:#4A3F37">Investor Readiness</a><a href="Pitch to Investors.dc.html" style="padding:8px 0;font-size:15px;color:#4A3F37">Pitch to Investors</a></div></details>
+        </div>
+      </details>
+    </div>
+  </header>
+
+  <section id="form" style="border-bottom:1px solid rgba(28,20,16,0.2)">
+    <div data-pad="1" style="max-width:1280px;margin:0 auto;padding:clamp(40px,7vh,72px) clamp(24px,6vw,96px) 112px;display:grid;grid-template-columns:minmax(0,0.85fr) minmax(0,1.15fr);gap:48px clamp(32px,6vw,96px);align-items:start" data-hero="1">
+      <div data-sticky="1" style="position:sticky;top:112px;display:flex;flex-direction:column">
+        <div style="display:flex;gap:24px;font-size:12px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;flex-wrap:wrap"><span>{{ eyeA }}</span><span style="opacity:0.55">{{ eyeB }}</span></div>
+        <h1 style="margin:20px 0 0;font-size:clamp(30px,3vw,40px);line-height:1.02;font-weight:600;letter-spacing:-0.035em">
+          <span style="display:block;overflow:hidden;padding-bottom:6px"><span data-line="0" style="display:block">{{ heroA }}</span></span>
+          <span style="display:block;overflow:hidden;padding-bottom:6px"><span data-line="1" style="display:block">{{ heroB }}</span></span>
+        </h1>
+        <p style="margin:24px 0 0;font-size:17px;line-height:1.6;max-width:440px">{{ heroP }}</p>
+        <sc-if value="{{ isApply }}" hint-placeholder-val="{{ false }}">
+        <div style="margin-top:40px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid rgba(28,20,16,0.2);max-width:460px">
+          <div style="padding:16px 12px 0 0;display:flex;flex-direction:column;gap:4px"><span style="font-size:28px;font-weight:600;letter-spacing:-0.04em;line-height:1">6</span><span style="font-size:13px;color:#4A3F37">Months</span></div>
+          <div style="padding:16px 12px 0 16px;border-left:1px solid rgba(28,20,16,0.2);display:flex;flex-direction:column;gap:4px"><span style="font-size:28px;font-weight:600;letter-spacing:-0.04em;line-height:1">30</span><span style="font-size:13px;color:#4A3F37">Founders</span></div>
+          <div style="padding:16px 0 0 16px;border-left:1px solid rgba(28,20,16,0.2);display:flex;flex-direction:column;gap:4px"><span style="font-size:28px;font-weight:600;letter-spacing:-0.04em;line-height:1">50+</span><span style="font-size:13px;color:#4A3F37">Experts</span></div>
+        </div>
+        <a href="#who" style="margin-top:32px;align-self:flex-start;font-size:15px;font-weight:600;background:linear-gradient(#1C1410,#1C1410) no-repeat 0 100% / 100% 1px;padding-bottom:3px">Read about the program first</a>
+        </sc-if>
+      </div>
+
+      <div data-soft="1" style="background:#FBF8F1;border:1px solid rgba(28,20,16,0.14);border-radius:12px;overflow:hidden;max-width:560px;width:100%">
+        <sc-if value="{{ notSent }}" hint-placeholder-val="{{ true }}">
+        <sc-if value="{{ choosing }}" hint-placeholder-val="{{ false }}">
+          <div style="display:flex;flex-direction:column">
+            <div style="background:#F3EDE0;border-bottom:1px solid rgba(28,20,16,0.14);padding:24px 24px 22px;display:flex;flex-direction:column;gap:6px"><span style="font-size:12px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;display:flex;align-items:center;gap:10px"><span style="width:8px;height:8px;border-radius:50%;background:#FFCC00;display:block;flex:none"></span>Start here</span><span style="margin-top:4px;font-size:22px;font-weight:600;letter-spacing:-0.02em;line-height:1.2">What brings you here?</span><span style="font-size:13px;color:#4A3F37">Pick one. You can switch at any time.</span></div>
+            <div style="padding:20px 24px 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:12px">
+              <sc-for list="{{ typeOpts }}" as="o" hint-placeholder-count="2">
+                <button type="button" onClick="{{ o.onClick }}" style="all:unset;box-sizing:border-box;cursor:pointer;background:#FBF8F1;border:1px solid rgba(28,20,16,0.22);border-radius:10px;padding:20px;min-height:140px;display:flex;flex-direction:column;justify-content:space-between;gap:24px;transition:background .4s ease,border-color .4s ease" style-hover="background:#FFCC00;border-color:#FFCC00">
+                  <span style="display:flex;justify-content:space-between;align-items:center;gap:12px"><span style="font-size:12px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;white-space:nowrap">{{ o.n }}</span><svg width="14" height="14" viewBox="0 0 16 16" fill="none" style="flex:none"><path d="M6 3.5l4.5 4.5L6 12.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+                  <span style="display:flex;flex-direction:column;gap:6px"><span style="font-size:18px;font-weight:600;letter-spacing:-0.015em;line-height:1.2">{{ o.t }}</span><span style="font-size:13px;line-height:1.45;color:#4A3F37">{{ o.d }}</span></span>
+                </button>
+              </sc-for>
+            </div>
+          </div>
+        </sc-if>
+        <sc-if value="{{ inForm }}" hint-placeholder-val="{{ true }}">
+          <div style="padding:20px 24px 0;display:flex;align-items:center;gap:16px">
+            <span style="font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#6B5E54;white-space:nowrap">{{ stepLabel }}</span>
+            <div style="flex:1;display:flex;gap:4px">
+              <sc-for list="{{ bars }}" as="b" hint-placeholder-count="3"><span style="flex:1;height:2px;border-radius:2px;background:{{ b.bg }};transition:background .5s ease"></span></sc-for>
+            </div>
+            <button type="button" onClick="{{ changeType }}" style="all:unset;cursor:pointer;font-size:12px;font-weight:500;color:#4A3F37;white-space:nowrap;background:linear-gradient(#1C1410,#1C1410) no-repeat 0 100% / 100% 1px;padding-bottom:1px" style-hover="color:#1C1410">{{ switchLabel }}</button>
+          </div>
+          <form onSubmit="{{ submit }}" style="padding:24px 24px 20px;display:flex;flex-direction:column;gap:20px">
+            <sc-if value="{{ hasSession }}" hint-placeholder-val="{{ false }}">
+              <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;background:#FFCC00;border-radius:10px;padding:12px 12px 12px 18px">
+                <div style="display:flex;flex-direction:column;gap:2px;min-width:0"><span style="font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase">Registering for</span><span style="font-size:16px;font-weight:600">{{ sessionTitle }}</span><span style="font-size:13px">{{ sessionMeta }}</span></div>
+                <button type="button" onClick="{{ clearSession }}" aria-label="Remove session" style="all:unset;cursor:pointer;width:36px;height:36px;display:flex;align-items:center;justify-content:center;border-radius:50%" style-hover="background:rgba(28,20,16,0.1)"><svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3.5 3.5l9 9M12.5 3.5l-9 9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path></svg></button>
+              </div>
+            </sc-if>
+            <div style="display:flex;flex-direction:column;gap:4px">
+              <span style="font-size:19px;font-weight:600;letter-spacing:-0.02em;line-height:1.2">{{ stepTitle }}</span>
+              <span style="font-size:13px;color:#6B5E54">{{ stepSub }}</span>
+            </div>
+
+            <sc-if value="{{ s1 }}" hint-placeholder-val="{{ true }}">
+              <div data-two="1" style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+                <sc-for list="{{ f1 }}" as="f" hint-placeholder-count="4">
+                  <label style="display:flex;flex-direction:column;gap:6px"><span style="font-size:12px;font-weight:500;color:#4A3F37">{{ f.label }}</span><input type="{{ f.type }}" value="{{ f.value }}" onChange="{{ f.onChange }}" placeholder="{{ f.ph }}" style="all:unset;box-sizing:border-box;width:100%;background:#FBF8F1;border:1px solid rgba(28,20,16,0.18);border-radius:8px;padding:10px 12px;font-size:15px;transition:border-color .3s,box-shadow .3s;border-color:{{ f.bd }}" style-focus="border-color:#1C1410;box-shadow:0 0 0 2px rgba(255,204,0,0.6)"></input></label>
+                </sc-for>
+              </div>
+            </sc-if>
+
+            <sc-if value="{{ s2 }}" hint-placeholder-val="{{ false }}">
+              <div data-two="1" style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+                <sc-for list="{{ f2 }}" as="f" hint-placeholder-count="2">
+                  <label style="display:flex;flex-direction:column;gap:6px"><span style="font-size:12px;font-weight:500;color:#4A3F37">{{ f.label }}</span><input type="{{ f.type }}" value="{{ f.value }}" onChange="{{ f.onChange }}" placeholder="{{ f.ph }}" style="all:unset;box-sizing:border-box;width:100%;background:#FBF8F1;border:1px solid rgba(28,20,16,0.18);border-radius:8px;padding:10px 12px;font-size:15px;transition:border-color .3s,box-shadow .3s;border-color:{{ f.bd }}" style-focus="border-color:#1C1410;box-shadow:0 0 0 2px rgba(255,204,0,0.6)"></input></label>
+                </sc-for>
+              </div>
+              <div style="display:flex;flex-direction:column;gap:8px">
+                <span style="font-size:12px;font-weight:500;color:#4A3F37">Where are you today?</span>
+                <div data-two="1" style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+                  <sc-for list="{{ stageOpts }}" as="o" hint-placeholder-count="4">
+                    <button type="button" onClick="{{ o.onClick }}" style="all:unset;box-sizing:border-box;cursor:pointer;background:{{ o.bg }};border:1px solid {{ o.bd }};border-radius:8px;padding:10px 12px;display:grid;grid-template-columns:minmax(0,1fr) 16px;gap:2px 10px;align-items:start;transition:background .35s ease,border-color .35s ease,transform .3s ease" style-hover="border-color:#1C1410">
+                      <span style="font-size:14px;font-weight:600;letter-spacing:-0.01em">{{ o.label }}</span>
+                      <span style="grid-row:span 2;width:16px;height:16px;border-radius:50%;border:1.5px solid #1C1410;background:{{ o.dot }};display:flex;align-items:center;justify-content:center;transition:background .3s ease"><span style="width:6px;height:6px;border-radius:50%;background:#FBF8F1;opacity:{{ o.on }}"></span></span>
+                      <span style="font-size:12px;line-height:1.4;color:#4A3F37">{{ o.d }}</span>
+                    </button>
+                  </sc-for>
+                </div>
+              </div>
+            </sc-if>
+
+            <sc-if value="{{ s3 }}" hint-placeholder-val="{{ false }}">
+              <div style="display:flex;flex-direction:column;gap:8px">
+                <span style="font-size:12px;font-weight:500;color:#4A3F37">What’s stopping you from growing? <span style="color:#6B5E54">· pick any</span></span>
+                <div style="display:flex;flex-wrap:wrap;gap:6px">
+                  <sc-for list="{{ challengeOpts }}" as="o" hint-placeholder-count="8"><button type="button" onClick="{{ o.onClick }}" style="all:unset;cursor:pointer;background:{{ o.bg }};border:1px solid {{ o.bd }};border-radius:999px;padding:6px 12px 6px 8px;font-size:13px;font-weight:500;display:flex;align-items:center;gap:6px;transition:background .35s ease,border-color .35s ease" style-hover="border-color:#1C1410"><span style="width:16px;height:16px;border-radius:50%;border:1.5px solid #1C1410;background:{{ o.dot }};display:flex;align-items:center;justify-content:center"><svg width="9" height="9" viewBox="0 0 16 16" fill="none" style="opacity:{{ o.on }}"><path d="M3 8.5l3.2 3.2L13 5" stroke="#FFCC00" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>{{ o.label }}</button></sc-for>
+                </div>
+              </div>
+              <label style="display:flex;flex-direction:column;gap:6px"><span style="font-size:12px;font-weight:500;color:#4A3F37">What are you building, and where do you want to take it?</span><textarea rows="3" value="{{ vision }}" onChange="{{ setVision }}" placeholder="Two or three lines is enough" style="all:unset;box-sizing:border-box;width:100%;background:#FBF8F1;border:1px solid rgba(28,20,16,0.18);border-radius:8px;padding:10px 12px;font-size:15px;transition:border-color .3s,box-shadow .3s;line-height:1.5;resize:vertical" style-focus="border-color:#1C1410;box-shadow:0 0 0 2px rgba(255,204,0,0.6)"></textarea></label>
+            </sc-if>
+
+            <sc-if value="{{ e1 }}" hint-placeholder-val="{{ false }}">
+              <div style="display:flex;flex-direction:column;gap:8px">
+                <span style="font-size:12px;font-weight:500;color:#4A3F37">What's it about?</span>
+                <div style="display:flex;flex-wrap:wrap;gap:6px">
+                  <sc-for list="{{ topicOpts }}" as="o" hint-placeholder-count="6"><button type="button" onClick="{{ o.onClick }}" style="all:unset;cursor:pointer;background:{{ o.bg }};border:1px solid {{ o.bd }};border-radius:999px;padding:6px 12px 6px 8px;font-size:13px;font-weight:500;display:flex;align-items:center;gap:6px;transition:background .35s ease,border-color .35s ease" style-hover="border-color:#1C1410"><span style="width:16px;height:16px;border-radius:50%;border:1.5px solid #1C1410;background:{{ o.dot }};display:flex;align-items:center;justify-content:center"><svg width="9" height="9" viewBox="0 0 16 16" fill="none" style="opacity:{{ o.on }}"><path d="M3 8.5l3.2 3.2L13 5" stroke="#FFCC00" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>{{ o.label }}</button></sc-for>
+                </div>
+              </div>
+              <div data-two="1" style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+                <sc-for list="{{ fe }}" as="f" hint-placeholder-count="4">
+                  <label style="display:flex;flex-direction:column;gap:6px"><span style="font-size:12px;font-weight:500;color:#4A3F37">{{ f.label }}</span><input type="{{ f.type }}" value="{{ f.value }}" onChange="{{ f.onChange }}" placeholder="{{ f.ph }}" style="all:unset;box-sizing:border-box;width:100%;background:#FBF8F1;border:1px solid rgba(28,20,16,0.18);border-radius:8px;padding:10px 12px;font-size:15px;transition:border-color .3s,box-shadow .3s;border-color:{{ f.bd }}" style-focus="border-color:#1C1410;box-shadow:0 0 0 2px rgba(255,204,0,0.6)"></input></label>
+                </sc-for>
+              </div>
+              <label style="display:flex;flex-direction:column;gap:6px"><span style="font-size:12px;font-weight:500;color:#4A3F37">Message · optional</span><textarea rows="3" value="{{ msg }}" onChange="{{ setMsg }}" placeholder="A line or two about what you need" style="all:unset;box-sizing:border-box;width:100%;background:#FBF8F1;border:1px solid rgba(28,20,16,0.18);border-radius:8px;padding:10px 12px;font-size:15px;line-height:1.5;resize:vertical;transition:border-color .3s,box-shadow .3s" style-focus="border-color:#1C1410;box-shadow:0 0 0 2px rgba(255,204,0,0.6)"></textarea></label>
+            </sc-if>
+
+            
+
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:4px">
+              <div style="min-height:40px;display:flex;align-items:center">
+                <sc-if value="{{ canBack }}" hint-placeholder-val="{{ false }}"><button type="button" onClick="{{ back }}" style="all:unset;cursor:pointer;font-size:14px;font-weight:500;display:flex;align-items:center;gap:6px;padding:8px 0" style-hover="color:#4A3F37"><svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M10 3.5 5.5 8l4.5 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>Back</button></sc-if>
+                <sc-if value="{{ noBack }}" hint-placeholder-val="{{ true }}"><span style="font-size:12px;color:#6B5E54">{{ hint }}</span></sc-if>
+              </div>
+              <div style="display:flex;align-items:center;gap:12px">
+                <sc-if value="{{ showErr }}" hint-placeholder-val="{{ false }}"><span style="font-size:12px;color:#4A3F37">{{ err }}</span></sc-if>
+                <button type="submit" style="all:unset;cursor:pointer;background:{{ ctaBg }};color:{{ ctaFg }};border-radius:8px;padding:10px 18px;font-size:14px;font-weight:600;display:flex;gap:8px;align-items:center;transition:transform .2s ease" style-hover="transform:translateX(2px)">{{ ctaLabel }}</button>
+              </div>
+            </div>
+          </form>
+        </sc-if>
+        </sc-if>
+        <div style="padding:0 24px">
+        <sc-if value="{{ sent }}" hint-placeholder-val="{{ false }}">
+          <div style="display:flex;flex-direction:column;gap:12px;padding:28px 0">
+            <div style="font-size:12px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase">{{ sentEye }}</div>
+            <div style="font-size:22px;line-height:1.2;font-weight:600;letter-spacing:-0.02em">Thank you. We’ll be in touch.</div>
+            <p style="margin:0;font-size:14px;line-height:1.6;max-width:440px;color:#4A3F37">{{ sentP }}</p>
+            <sc-if value="{{ isApply }}" hint-placeholder-val="{{ false }}"><a href="Interview Prep.dc.html" style="align-self:flex-start;margin-top:8px;font-size:15px;font-weight:600;background:linear-gradient(#1C1410,#1C1410) no-repeat 0 100% / 100% 1px;padding-bottom:3px">How to prepare for your interview</a></sc-if>
+          </div>
+        </sc-if>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <sc-if value="{{ showForge }}" hint-placeholder-val="{{ true }}">
+  <div style="max-width:1280px;margin:0 auto;padding:0 clamp(24px,6vw,96px);display:flex;gap:clamp(24px,6vw,96px);align-items:flex-start">
+    <nav data-toc="1" style="flex:0 0 220px;position:sticky;top:112px;padding-top:112px;display:flex;flex-direction:column;gap:2px">
+      <div style="font-size:12px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;margin-bottom:14px;opacity:0.6">On this page</div>
+      <sc-for list="{{ toc }}" as="t" hint-placeholder-count="7"><a href="{{ t.href }}" style="padding:7px 0 7px 14px;border-left:2px solid {{ t.bc }};font-size:14px;font-weight:{{ t.fw }};transition:border-color .4s ease" style-hover="border-color:#FFCC00">{{ t.label }}</a></sc-for>
+    </nav>
+
+    <main style="flex:1 1 auto;min-width:0;max-width:760px">
+      <section id="who" data-sec="1" data-pad="1" style="padding:112px 0 72px;border-bottom:1px solid rgba(28,20,16,0.2)">
+        <div style="font-size:12px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase">01 / Who we want</div>
+        <h2 style="margin:14px 0 0;font-size:clamp(26px,2.6vw,36px);line-height:1.08;font-weight:600;letter-spacing:-0.015em">Founders already building, ready for the next level.</h2>
+        <p data-soft="1" style="margin:20px 0 0;font-size:17px;line-height:1.65">100X Forge is a 6-month, highly curated program for founders who know they need the right strategy, systems, people, technology and execution to grow.</p>
+        <div data-stagger="1" style="margin-top:32px;border-top:1px solid rgba(28,20,16,0.2)">
+          <sc-for list="{{ whoList }}" as="w" hint-placeholder-count="8"><div style="display:grid;grid-template-columns:40px minmax(0,1fr);padding:14px 0;border-bottom:1px solid rgba(28,20,16,0.2);align-items:baseline"><span style="font-size:12px;font-weight:600;opacity:0.6">{{ w.n }}</span><span style="font-size:16px;font-weight:500">{{ w.t }}</span></div></sc-for>
+        </div>
+        <p data-soft="1" style="margin:28px 0 0;font-size:16px;line-height:1.6">You don’t need to have everything figured out. <strong style="font-weight:600">You need a business, a vision and the willingness to do the work.</strong></p>
+      </section>
+
+      <section id="inside" data-sec="1" data-pad="1" style="padding:72px 0;border-bottom:1px solid rgba(28,20,16,0.2)">
+        <div style="font-size:12px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase">02 / How it works</div>
+        <h2 style="margin:14px 0 0;font-size:clamp(26px,2.6vw,36px);line-height:1.08;font-weight:600;letter-spacing:-0.015em">You work on your business while building it.</h2>
+        <p data-soft="1" style="margin:20px 0 0;font-size:17px;line-height:1.65">This isn’t another classroom program. Eight tracks, applied to your business.</p>
+        <div style="margin-top:32px;border-top:1px solid rgba(28,20,16,0.2)">
+          <sc-for list="{{ tracks }}" as="q" hint-placeholder-count="8">
+            <div style="border-bottom:1px solid rgba(28,20,16,0.2)">
+              <button onClick="{{ q.toggle }}" style="width:100%;border:0;background:transparent;cursor:pointer;font-family:'Poppins',sans-serif;text-align:left;padding:20px 0;display:grid;grid-template-columns:40px minmax(0,1fr) 28px;gap:12px;align-items:center;color:#1C1410">
+                <span style="font-size:12px;font-weight:600;opacity:0.6">{{ q.n }}</span>
+                <span style="font-size:18px;font-weight:400;letter-spacing:-0.01em"><span style="background:linear-gradient(#FFCC00,#FFCC00) no-repeat 0 100% / {{ q.hl }} 2px;padding-bottom:3px;transition:background-size 1s cubic-bezier(.22,.61,.36,1)">{{ q.t }}</span></span>
+                <span style="display:flex;justify-content:center;transform:rotate({{ q.rot }}deg);transition:transform .8s cubic-bezier(.22,.61,.36,1)"><svg width="18" height="18" viewBox="0 0 16 16" fill="none" style="display:block"><path d="M3.5 6l4.5 4.5L12.5 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+              </button>
+              <div style="display:grid;grid-template-rows:{{ q.rows }};transition:grid-template-rows .9s cubic-bezier(.22,.61,.36,1)">
+                <div style="overflow:hidden"><p style="margin:0;padding:0 40px 24px 52px;font-size:15px;line-height:1.65;color:#4A3F37">{{ q.d }}</p></div>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+      </section>
+
+      <section id="build" data-sec="1" data-pad="1" style="padding:72px 0;border-bottom:1px solid rgba(28,20,16,0.2)">
+        <div style="font-size:12px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase">03 / What you get</div>
+        <h2 style="margin:14px 0 0;font-size:clamp(26px,2.6vw,36px);line-height:1.08;font-weight:600;letter-spacing:-0.015em">A business better structured to grow.</h2>
+        <p data-soft="1" style="margin:20px 0 0;font-size:17px;line-height:1.65">Depending on your starting point, your journey may include:</p>
+        <div data-stagger="1" style="margin-top:24px;display:flex;flex-wrap:wrap;gap:8px">
+          <sc-for list="{{ buildList }}" as="b" hint-placeholder-count="14"><span style="border:1px solid rgba(28,20,16,0.3);border-radius:999px;padding:8px 16px;font-size:14px;font-weight:500;white-space:nowrap;transition:background .4s ease,border-color .4s ease" style-hover="background:#FFCC00;border-color:#FFCC00">{{ b.t }}</span></sc-for>
+        </div>
+        <div data-cells="1" style="margin-top:48px;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,200px),1fr));gap:1px;background:rgba(28,20,16,0.18);border:1px solid rgba(28,20,16,0.18)">
+          <sc-for list="{{ experience }}" as="e" hint-placeholder-count="6">
+            <div style="background:#FBF8F1;padding:22px 22px 24px;display:flex;flex-direction:column;gap:8px;transition:background .5s cubic-bezier(.22,.61,.36,1)" style-hover="background:#FFCC00">
+              <span style="align-self:flex-start;font-size:15px;font-weight:600;letter-spacing:-0.01em;background:linear-gradient(#FFCC00,#FFCC00) no-repeat 0 100% / 100% 3px;padding-bottom:4px">{{ e.t }}</span>
+              <span style="font-size:13px;line-height:1.55;color:#4A3F37">{{ e.d }}</span>
+            </div>
+          </sc-for>
+        </div>
+      </section>
+
+      <section id="ecosystem" data-sec="1" data-pad="1" style="padding:72px 0;border-bottom:1px solid rgba(28,20,16,0.2)">
+        <div style="font-size:12px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase">04 / Ecosystem</div>
+        <h2 style="margin:14px 0 0;font-size:clamp(26px,2.6vw,36px);line-height:1.08;font-weight:600;letter-spacing:-0.015em">More than mentorship.</h2>
+        <p data-soft="1" style="margin:20px 0 0;font-size:17px;line-height:1.65">Your journey doesn’t happen in isolation. Forge connects you to the wider Pitchvilla ecosystem, plus experts, operators and founders across strategy, finance, marketing, technology, AI, sales, HR, operations, fundraising and branding.</p>
+        <div data-stagger="1" style="margin-top:32px;border-top:1px solid rgba(28,20,16,0.2)">
+          <sc-for list="{{ eco }}" as="e" hint-placeholder-count="6">
+            <a href="{{ e.href }}" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr) 20px;gap:6px 24px;padding:16px 0;border-bottom:1px solid rgba(28,20,16,0.2);align-items:baseline" style-hover="padding-left:8px">
+              <span style="font-size:16px;font-weight:600;letter-spacing:-0.01em">{{ e.t }}</span>
+              <span style="font-size:14px;line-height:1.55;color:#4A3F37">{{ e.d }}</span>
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M6 3.5 10.5 8 6 12.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            </a>
+          </sc-for>
+        </div>
+        <div data-soft="1" style="margin-top:40px;background:#F3EDE0;border:1px solid rgba(28,20,16,0.16);padding:28px clamp(20px,3vw,32px)">
+          <div style="font-size:12px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase">A curated cohort</div>
+          <p style="margin:12px 0 0;font-size:16px;line-height:1.6">You’ll learn from other founders building alongside you. Your cohort can become:</p>
+          <div style="margin-top:16px;display:flex;flex-wrap:wrap;gap:8px"><span style="border:1px solid #1C1410;border-radius:999px;padding:7px 14px;font-size:14px;font-weight:500">Your sounding board</span><span style="border:1px solid #1C1410;border-radius:999px;padding:7px 14px;font-size:14px;font-weight:500">Your network</span><span style="border:1px solid #1C1410;border-radius:999px;padding:7px 14px;font-size:14px;font-weight:500">Your collaborators</span><span style="border:1px solid #1C1410;border-radius:999px;padding:7px 14px;font-size:14px;font-weight:500">Your future partners</span></div>
+        </div>
+      </section>
+
+      <section id="selection" data-sec="1" data-pad="1" style="padding:72px 0;border-bottom:1px solid rgba(28,20,16,0.2)">
+        <div style="font-size:12px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase">05 / Selection</div>
+        <h2 style="margin:14px 0 0;font-size:clamp(26px,2.6vw,36px);line-height:1.08;font-weight:600;letter-spacing:-0.015em">We’re not looking for perfect businesses. We’re looking for serious founders.</h2>
+        <p data-soft="1" style="margin:20px 0 0;font-size:17px;line-height:1.65">Your application helps us understand:</p>
+        <div data-stagger="1" style="margin-top:24px;display:flex;flex-direction:column;border-top:1px solid rgba(28,20,16,0.2)">
+          <sc-for list="{{ questions }}" as="q" hint-placeholder-count="5"><div style="display:grid;grid-template-columns:40px minmax(0,1fr);padding:16px 0;border-bottom:1px solid rgba(28,20,16,0.2);align-items:baseline"><span style="font-size:12px;font-weight:600;opacity:0.6">{{ q.n }}</span><span style="font-size:18px;font-weight:500;letter-spacing:-0.01em">{{ q.t }}</span></div></sc-for>
+        </div>
+        <p data-soft="1" style="margin:24px 0 0;font-size:16px;line-height:1.6">We look for ambition, clarity, resilience and the willingness to execute.</p>
+        <div data-steps="1" style="margin-top:40px;display:flex;flex-direction:column">
+          <sc-for list="{{ steps }}" as="st" hint-placeholder-count="5">
+            <div style="display:grid;grid-template-columns:40px minmax(0,1fr);align-items:stretch;opacity:{{ st.o }};transform:translateY({{ st.y }}px);transition:opacity .6s ease {{ st.d }}s,transform .9s cubic-bezier(.22,.61,.36,1) {{ st.d }}s">
+              <div style="display:flex;flex-direction:column;align-items:flex-start"><span style="width:14px;height:14px;background:{{ st.dot }};border:1px solid #1C1410;display:block;margin-top:4px"></span><span style="flex:1;width:1px;margin-left:7px;background:{{ st.line }}"></span></div>
+              <div style="padding-bottom:22px;display:flex;gap:14px;align-items:baseline"><span style="width:24px;flex:none;font-size:12px;font-weight:600;opacity:0.6">{{ st.n }}</span><span style="font-size:17px;font-weight:600;letter-spacing:-0.01em">{{ st.t }}</span></div>
+            </div>
+          </sc-for>
+        </div>
+      </section>
+
+      <section id="notfor" data-sec="1" data-pad="1" style="padding:72px 0 112px">
+        <div style="font-size:12px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase">06 / Not for everyone</div>
+        <h2 style="margin:14px 0 0;font-size:clamp(26px,2.6vw,36px);line-height:1.08;font-weight:600;letter-spacing:-0.015em">Forge may not be the right fit if you want:</h2>
+        <div data-stagger="1" style="margin-top:28px;display:flex;flex-direction:column;border-top:1px solid rgba(28,20,16,0.2)">
+          <sc-for list="{{ notFor }}" as="x" hint-placeholder-count="5"><div style="display:grid;grid-template-columns:40px minmax(0,1fr);padding:14px 0;border-bottom:1px solid rgba(28,20,16,0.2);align-items:center"><svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3.5 3.5l9 9M12.5 3.5l-9 9" stroke="#6B5E54" stroke-width="1.8" stroke-linecap="round"></path></svg><span style="font-size:16px;font-weight:500">{{ x }}</span></div></sc-for>
+        </div>
+        <p data-soft="1" style="margin:28px 0 0;font-size:16px;line-height:1.6">It’s for founders willing to question, rebuild, execute and grow.</p>
+      </section>
+    </main>
+  </div>
+
+  <section style="background:#FFCC00">
+    <div data-pad="1" style="max-width:1280px;margin:0 auto;padding:112px clamp(24px,6vw,96px)">
+      <div style="font-size:12px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase">100X Forge · Starts 1st Nov 2026</div>
+      <h2 style="margin:14px 0 0;font-size:clamp(30px,3vw,40px);line-height:1.04;font-weight:600;letter-spacing:-0.025em;max-width:1100px">Your business.<br>Your next 100X.</h2>
+      <div style="margin-top:56px;display:flex;gap:28px;align-items:center;flex-wrap:wrap">
+        <a href="#form" onClick="{{ pickApply }}" style="background:#1C1410;color:#FBF8F1;border-radius:8px;padding:18px 28px;font-size:16px;font-weight:600;display:flex;gap:12px;align-items:center" style-hover="color:#FFCC00">Apply</a>
+        <span style="font-size:15px">Limited seats per cohort</span>
+      </div>
+    </div>
+  </section>
+  </sc-if>
+
+  <footer style="background:#FBF8F1">
+    <div style="max-width:1280px;margin:0 auto;padding:32px clamp(24px,6vw,96px);display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px 32px;font-size:13px">
+      <span style="display:flex;align-items:center;gap:8px;font-weight:600"><span style="width:10px;height:10px;border-radius:50%;background:#FFCC00;display:block"></span>© 2026 Pitchvilla Startup School</span>
+      <div style="display:flex;gap:24px;flex-wrap:wrap"><a href="Pitchvilla Website v4.dc.html">100X Forge</a><a href="mailto:connect@pitchvilla.com">connect@pitchvilla.com</a></div>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = (() => { let q = {}; try { const p = new URLSearchParams(window.location.search); q = { session: p.get('session'), date: p.get('date'), fee: p.get('fee'), type: p.get('type'), topic: p.get('topic') }; } catch (e) {} const type = null; return { type, topic: q.topic || null, step: 0, v: {}, stage: null, challenges: [], sent: false, tried: false, track: 0, stepsIn: false, active: 'who', session: q.session || null, sDate: q.date || '', sFee: q.fee || '' }; })();
+
+  componentDidMount() {
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const q = s => Array.from(document.querySelectorAll(s));
+    if (!reduce) {
+      q('[data-line]').forEach((el, i) => { el.style.transform = 'translateY(28px)'; el.style.opacity = '0'; el.style.transition = `transform .9s cubic-bezier(.22,.61,.36,1) ${0.1 + i * 0.1}s, opacity .7s ease ${0.1 + i * 0.1}s`; el.getBoundingClientRect(); });
+      this.heroT = setTimeout(() => q('[data-line]').forEach(el => { el.style.transform = 'none'; el.style.opacity = '1'; }), 40);
+      const soft = q('h2, [data-soft]');
+      soft.forEach(el => { el.style.opacity = '0'; el.style.transform = 'translateY(20px)'; el.style.transition = 'opacity .7s ease, transform .9s cubic-bezier(.22,.61,.36,1)'; });
+      q('[data-stagger]').forEach(p => Array.from(p.children).forEach((c, i) => { const d = Math.min(i, 6) * 0.06; c.style.opacity = '0'; c.style.transform = 'translateY(24px)'; c.style.transition = `opacity .6s ease ${d}s, transform .9s cubic-bezier(.22,.61,.36,1) ${d}s, background .5s cubic-bezier(.22,.61,.36,1)`; soft.push(c); }));
+      q('[data-cells]').forEach(p => Array.from(p.children).forEach((c, i) => Array.from(c.children).forEach(t => { const d = 0.05 + i * 0.06; t.style.opacity = '0'; t.style.transform = 'translateY(8px)'; t.style.transition = `opacity .9s ease ${d}s, transform 1.1s cubic-bezier(.22,.61,.36,1) ${d}s`; soft.push(t); })));
+      this.pending = soft;
+    }
+    this.check = () => {
+      const vh = window.innerHeight;
+      if (this.pending && this.pending.length) this.pending = this.pending.filter(el => { if (!el.isConnected) return false; const r = el.getBoundingClientRect(); if (r.top < vh * 0.95 && r.bottom > 0) { el.style.opacity = '1'; el.style.transform = 'none'; return false; } return true; });
+      const st = document.querySelector('[data-steps]');
+      if (st && !this.state.stepsIn) { const r = st.getBoundingClientRect(); if (r.top < vh * 0.85 && r.bottom > 0) this.setState({ stepsIn: true }); }
+      let act = this.state.active;
+      q('[data-sec]').forEach(s => { if (s.getBoundingClientRect().top < vh * 0.4) act = s.id; });
+      if (act !== this.state.active) this.setState({ active: act });
+    };
+    window.addEventListener('scroll', this.check, { passive: true });
+    this.tick = setInterval(this.check, 400);
+    setTimeout(this.check, 100);
+  }
+  componentWillUnmount() { window.removeEventListener('scroll', this.check); clearInterval(this.tick); clearTimeout(this.heroT); }
+
+  renderVals() {
+    const s = this.state;
+    const pad = n => String(n).padStart(2, '0');
+    const pill = (on, onClick, label) => ({ label, bg: on ? '#FFCC00' : 'transparent', bd: on ? '#FFCC00' : 'rgba(28,20,16,0.3)', onClick });
+    const v = s.v;
+    const bad = k => s.tried && !String(v[k] || '').trim();
+    const field = (k, label, type, ph) => ({ label, type, ph, value: v[k] || '', bd: bad(k) ? '#1C1410' : 'rgba(28,20,16,0.18)', onChange: e => { const val = e.target.value; this.setState(st => ({ v: { ...st.v, [k]: val } })); } });
+    const f1 = [field('name', 'Full name', 'text', 'Your name'), field('email', 'Email', 'email', 'you@business.com'), field('phone', 'Phone', 'tel', '+91'), field('city', 'City', 'text', 'Where you’re based')];
+    const f2 = [field('business', 'Business name', 'text', 'Company or brand'), { ...field('site', 'Website · optional', 'text', 'yourbusiness.com'), bd: 'rgba(28,20,16,0.18)' }];
+    const stageOpts = [['Early revenue', 'Selling, finding repeatability'], ['Growing SME', 'Established, needs systems'], ['Stuck at a stage', 'Growth has plateaued'], ['Ready to expand', 'New markets or capital']].map(([l, d]) => { const on = s.stage === l; return { label: l, d, on: on ? 1 : 0, bg: on ? '#FFCC00' : '#FBF8F1', bd: on ? '#FFCC00' : (s.tried && !s.stage ? '#1C1410' : 'rgba(28,20,16,0.18)'), dot: on ? '#1C1410' : 'transparent', onClick: () => this.setState({ stage: l }) }; });
+    const challengeOpts = ['Strategy', 'Team', 'Technology', 'Marketing', 'Sales', 'Operations', 'Founder dependency', 'Fundraising'].map(l => { const on = s.challenges.includes(l); return { label: l, on: on ? 1 : 0, bg: on ? '#FFCC00' : '#FBF8F1', bd: on ? '#FFCC00' : 'rgba(28,20,16,0.18)', dot: on ? '#1C1410' : 'transparent', onClick: () => this.setState(st => ({ challenges: on ? st.challenges.filter(c => c !== l) : [...st.challenges, l] })) }; });
+    const isApply = s.type === 'apply', isEnq = s.type === 'enquire';
+    const req = isEnq ? ['name', 'email', 'phone'] : [['name', 'email', 'phone', 'city'], ['business'], []][s.step];
+    const missing = req.filter(k => !String(v[k] || '').trim()).length || (isEnq ? !s.topic : ((s.step === 1 && !s.stage) || (s.step === 2 && !s.challenges.length)));
+    const fe = [field('name', 'Full name', 'text', 'Your name'), field('email', 'Email', 'email', 'you@business.com'), field('phone', 'Phone', 'tel', '+91'), { ...field('company', 'Company · optional', 'text', 'Company or brand'), bd: 'rgba(28,20,16,0.18)' }];
+    const topicOpts = ['Launch', 'Grow', 'Raise', '100X Forge', 'Something else'].map(l => { const on = s.topic === l; return { label: l, on: on ? 1 : 0, bg: on ? '#FFCC00' : '#FBF8F1', bd: on ? '#FFCC00' : (s.tried && !s.topic ? '#1C1410' : 'rgba(28,20,16,0.18)'), dot: on ? '#1C1410' : 'transparent', onClick: () => this.setState({ topic: l }) }; });
+    const typeOpts = [['Apply to 100X Forge', 'The 6-month founder program. Three short steps.', 'apply'], ['Make an enquiry', 'Launching, growing or raising.', 'enquire']].map(([t2, d, k], i) => ({ t: t2, d, n: i ? '02 / Enquiry' : '01 / Program', onClick: () => this.setState({ type: k, step: 0, tried: false }) }));
+    const hero = isEnq ? ['Enquiries', 'Reply within 2 working days', 'Talk to', 'Pitchvilla.', "Launching, growing or raising. We'll pass it to the right team."]
+      : isApply ? ['Applications open', 'Program starts 1st Nov 2026', 'Apply to', '100X Forge.', 'India’s founder growth program for businesses ready to build, reinvent and scale.']
+      : ['Pitchvilla', 'Apply or enquire', "Let's get", 'started.', 'Apply to 100X Forge, or ask us about launching, growing or raising.'];
+    const errs = ['Please fill in all four fields.', 'Add your business name and pick a stage.', 'Pick at least one challenge.'];
+    const meta = [['About you', 'So we know who to call.'], ['Your business', 'A quick snapshot of where you are.'], ['Your growth', 'What’s holding you back, and where you’re going.']];
+    const bars = (isEnq ? ['Enquiry'] : ['About you', 'Business', 'Growth']).map((label, i) => ({ label, bg: i <= s.step ? '#1C1410' : 'rgba(28,20,16,0.12)', fg: '#1C1410', fw: i === s.step ? 600 : 400 }));
+    const tocData = [['who', 'Who we want'], ['inside', 'How it works'], ['build', 'What you get'], ['ecosystem', 'Ecosystem'], ['selection', 'Selection'], ['notfor', 'Not for everyone']];
+    const toc = [...tocData.map(([id, label]) => ({ href: '#' + id, label, bc: s.active === id ? '#1C1410' : 'rgba(28,20,16,0.15)', fw: s.active === id ? 600 : 400 })), { href: '#form', label: 'Apply', bc: 'rgba(28,20,16,0.15)', fw: 600 }];
+    const whoList = ['Already running a startup, SME or growing business', 'Stuck at a particular stage of growth', 'Looking to restructure or reinvent the business', 'Preparing for aggressive expansion', 'Building systems beyond founder dependency', 'Looking to raise capital or become investment-ready', 'Struggling with team, technology, marketing, sales or operations', 'Serious about building a significantly larger business'].map((t, i) => ({ t, n: pad(i + 1) }));
+    const tracks = [
+      ['Founder Mindset', 'Build the mindset, decision-making ability and leadership capabilities required to operate at the next stage of business.'],
+      ['Business Strategy', 'Revisit your business model, positioning, market opportunity, competitive advantage and growth strategy.'],
+      ['Business Restructuring', 'Identify what is holding the business back and redesign the structure, processes and priorities required for growth.'],
+      ['People & Leadership', 'Build the team, leadership structure, hiring systems and accountability frameworks needed to reduce founder dependency.'],
+      ['Technology & Automation', 'Identify where technology, AI, automation and digital systems can improve the way your business operates.'],
+      ['Growth & Revenue', 'Build stronger marketing, sales, customer acquisition and revenue systems designed around measurable growth.'],
+      ['Funding Readiness', 'For businesses seeking capital, work towards an investment-ready business, financial story, pitch and fundraising strategy.'],
+      ['Execution', 'Convert strategy into a practical execution roadmap, with priorities, ownership, timelines and measurable outcomes.']
+    ].map(([t, d], i) => { const open = s.track === i; return { n: pad(i + 1), t, d, hl: open ? '100%' : '0%', rows: open ? '1fr' : '0fr', rot: open ? 180 : 0, toggle: () => this.setState({ track: open ? -1 : i }) }; });
+    const buildList = ['Refined Business Model', 'Growth Strategy', 'Repositioned Brand', 'Revenue Roadmap', 'Sales Framework', 'Marketing Strategy', 'Organizational Structure', 'Hiring Plan', 'Technology Roadmap', 'AI & Automation Opportunities', 'Financial & Business Metrics', 'Fundraising Strategy', 'Investor Narrative', '6–12 Month Execution Roadmap'].map((t, i) => ({ t, n: pad(i + 1) }));
+    const experience = [['6 Months', 'A structured journey focused on transformation and execution.'], ['Curated Cohort', 'A limited number of founders selected each cohort.'], ['Founder Sessions', 'Focused on the challenges that matter to your business.'], ['Expert Access', 'Operators and specialists across critical functions.'], ['Business Reviews', 'Regular reviews of progress, bottlenecks and priorities.'], ['Pitchvilla Ecosystem', 'Relevant capabilities, people and opportunities.']].map(([t, d]) => ({ t, d }));
+    const eco = [['Consulting Group', 'Strategic consulting for startups, SMEs and businesses.', 'Pitchvilla Consulting Group.dc.html'], ['Funding', 'Investor readiness and Angel & Seed connections.', '#'], ['Technology Framework', 'Technology, AI and digital products for scalable infrastructure.', '#'], ['Talent', 'Hiring, leadership and specialist talent.', '#'], ['Growth Lab', 'Marketing, sales and revenue acceleration.', '#'], ['Events', 'Founder networking and curated ecosystem experiences.', '#']].map(([t, d, href]) => ({ t, d, href }));
+    const questions = ['What are you building?', 'Where are you today?', 'What’s stopping you from growing?', 'Where do you want to take the business?', 'Why do you believe you can build it?'].map((t, i) => ({ t, n: pad(i + 1) }));
+    const stepNames = ['Apply', 'Founder Assessment', 'Founder Conversation', 'Selection', 'Onboarding'];
+    const steps = stepNames.map((t, i) => ({ t, n: pad(i + 1), o: s.stepsIn ? 1 : 0, y: s.stepsIn ? 0 : 16, d: (0.1 * i).toFixed(2), dot: i === 0 ? '#FFCC00' : '#FBF8F1', line: i === stepNames.length - 1 ? 'transparent' : 'rgba(28,20,16,0.3)' }));
+    const notFor = ['A motivational seminar', 'A certificate', 'Passive mentorship', 'Someone to build your business for you', 'Short-term hacks without execution'];
+    return {
+      toc, stageOpts, challengeOpts, whoList, tracks, buildList, experience, eco, questions, steps, notFor,
+      hasSession: !!s.session, sessionTitle: s.session || '', sessionMeta: [s.sDate, s.sFee].filter(Boolean).join(' · '),
+      clearSession: () => { this.setState({ session: null }); try { history.replaceState(null, '', window.location.pathname); } catch (e) {} },
+      f1, f2, fe, bars, topicOpts, typeOpts, isApply, showForge: !isEnq, choosing: !s.type, inForm: !!s.type, e1: isEnq,
+      eyeA: hero[0], eyeB: hero[1], heroA: hero[2], heroB: hero[3], heroP: hero[4],
+      stepLabel: isEnq ? 'Enquiry' : (s.step + 1) + ' / 3', switchLabel: isEnq ? 'Apply instead' : 'Just enquiring?',
+      changeType: () => this.setState({ type: isEnq ? 'apply' : 'enquire', step: 0, tried: false }),
+      pickApply: () => this.setState(st => st.type === 'apply' ? null : { type: 'apply', step: 0, tried: false }),
+      msg: v.msg || '', setMsg: e => { const val = e.target.value; this.setState(st => ({ v: { ...st.v, msg: val } })); },
+      stepTitle: isEnq ? 'How can we help?' : ['Tell us about you.', 'Tell us about your business.', 'Where do you want to go?'][s.step], stepSub: isEnq ? 'Pick a topic and leave your details.' : meta[s.step][1],
+      s1: isApply && s.step === 0, s2: isApply && s.step === 1, s3: isApply && s.step === 2, canBack: isApply && s.step > 0, noBack: !(isApply && s.step > 0), hint: isEnq ? 'Takes about 1 minute' : 'Takes about 3 minutes',
+      showErr: !!(s.tried && missing), err: isEnq ? 'Add your details and pick a topic.' : errs[s.step], ctaLabel: isEnq ? 'Send enquiry' : (s.step < 2 ? 'Continue' : 'Submit application'), ctaBg: !isEnq && s.step < 2 ? '#FFCC00' : '#1C1410', ctaFg: !isEnq && s.step < 2 ? '#1C1410' : '#FBF8F1',
+      sentEye: isEnq ? 'Enquiry received' : 'Application received', sentP: isEnq ? 'Our team will reply within 2 working days.' : 'Applications are reviewed before founders are invited to the next stage of selection. Our team will call you within 2 working days.',
+      vision: v.vision || '', setVision: e => { const val = e.target.value; this.setState(st => ({ v: { ...st.v, vision: val } })); },
+      back: () => this.setState(st => ({ step: Math.max(0, st.step - 1), tried: false })),
+      notSent: !s.sent, sent: s.sent,
+      submit: e => { e.preventDefault(); if (missing) return this.setState({ tried: true }); if (isApply && s.step < 2) return this.setState({ step: s.step + 1, tried: false }); this.setState({ sent: true }); const f = document.getElementById('form'); if (f) window.scrollTo({ top: f.offsetTop - 80, behavior: 'smooth' }); }
+    };
+  }
+}
+</script>
+</body>
+</html>

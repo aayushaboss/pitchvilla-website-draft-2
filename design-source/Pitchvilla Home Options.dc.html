@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="design_doc_mode" content="canvas">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>body{margin:0;background:#E4DDCD}a{color:#1C1410;text-decoration:none}a:hover{color:#1C1410}</style>
+</helmet>
+<section style="font-family:'Poppins',sans-serif;color:#1C1410;padding:64px 64px 0;display:flex;flex-direction:column;gap:24px">
+<div style="font-size:13px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#6B6057">Turn 3 · 2a as a single column of buttons</div>
+<div style="display:flex;flex-wrap:wrap;gap:64px;align-items:flex-start">
+
+  <div id="3a" style="display:flex;flex-direction:column;gap:14px">
+    <div style="font-size:13px;font-weight:600;display:flex;gap:10px;align-items:center"><span style="background:#1C1410;color:#FFCC00;padding:3px 8px;border-radius:4px">3a</span>Desktop · 1440, first screen 900</div>
+    <div data-screen-label="3a desktop" style="width:1440px;background:#FFFFFF;display:flex;flex-direction:column;box-shadow:0 24px 60px rgba(28,20,16,0.1)">
+      <div style="height:900px;display:flex;flex-direction:column;position:relative;overflow:hidden">
+        <div style="position:absolute;left:50%;top:150px;width:760px;height:340px;margin-left:-380px;border-radius:50%;background:#FFCC00;opacity:0.16;filter:blur(90px);pointer-events:none"></div>
+        <header style="position:relative;height:80px;flex:none;padding:0 72px;display:flex;align-items:center;justify-content:space-between">
+          <a href="#" style="font-size:19px;font-weight:600;letter-spacing:-0.02em;display:flex;align-items:center;gap:8px"><span style="width:12px;height:12px;border-radius:50%;background:#FFCC00;display:block"></span>Pitchvilla</a>
+        </header>
+        <main style="position:relative;flex:1;min-height:0;padding:0 72px;display:flex;flex-direction:column;align-items:center;justify-content:center">
+          <div style="opacity:{{ intro.o }};transform:translateY({{ intro.y }}px);transition:opacity .9s ease,transform .9s cubic-bezier(.22,.61,.36,1);display:flex;flex-direction:column;align-items:center"><h1 style="margin:0;font-size:50px;line-height:1.1;font-weight:400;letter-spacing:-0.035em;text-align:center;white-space:nowrap">Everything a founder needs to start, fund and scale.</h1>
+          <p style="margin:14px 0 0;font-size:17px;color:#8A7F74">What are you here for?</p></div>
+          <div style="margin-top:40px;width:100%;max-width:760px;display:flex;flex-direction:column;gap:8px">
+            <sc-for list="{{ branches }}" as="b" hint-placeholder-count="8">
+              <div style="opacity:{{ b.o }};transform:translateY({{ b.y }}px);transition:opacity .7s ease {{ b.d }}ms,transform .7s cubic-bezier(.22,.61,.36,1) {{ b.d }}ms"><a href="{{ b.href }}" style="background:#F6F3EC;border-radius:999px;padding:0 10px 0 28px;height:58px;display:grid;grid-template-columns:230px minmax(0,1fr) 38px;align-items:center;gap:20px;cursor:pointer;transition:background .3s ease,transform .3s cubic-bezier(.22,.61,.36,1)" style-hover="background:#FFCC00;transform:translateX(4px)" style-active="transform:scale(0.99)">
+                <span style="flex:none;font-size:17px;font-weight:500;letter-spacing:-0.015em">{{ b.name }}</span>
+                <span style="flex:1;min-width:0;font-size:13px;color:#6B6057;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ b.desc }}</span>
+                <span style="flex:none;width:38px;height:38px;border-radius:50%;background:#FFFFFF;display:flex;align-items:center;justify-content:center"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="#1C1410" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"></path></svg></span>
+              </a></div>
+            </sc-for>
+          </div>
+          <a href="#" style="margin-top:28px;font-size:15px;color:#6B6057;display:flex;gap:8px;align-items:center" style-hover="color:#1C1410">Not sure? <span style="color:#1C1410;font-weight:500;text-decoration:underline;text-decoration-color:#FFCC00;text-decoration-thickness:2px;text-underline-offset:5px">Talk to us</span></a>
+        </main>
+        <div style="height:32px;flex:none"></div>
+      </div>
+      <footer style="background:#F6F3EC;padding:40px 72px 28px;display:flex;flex-direction:column;gap:28px;font-size:13px;color:#6B6057">
+        <div style="display:flex;justify-content:space-between;gap:48px;align-items:flex-start">
+          <a href="#" style="font-size:17px;font-weight:600;letter-spacing:-0.02em;display:flex;align-items:center;gap:8px"><span style="width:10px;height:10px;border-radius:50%;background:#FFCC00;display:block"></span>Pitchvilla</a>
+          <div style="flex:1;max-width:760px;display:flex;flex-wrap:wrap;gap:12px 28px">
+            <sc-for list="{{ branches }}" as="b" hint-placeholder-count="8"><a href="{{ b.href }}" style="color:#4A3F37" style-hover="color:#1C1410">{{ b.name }}</a></sc-for>
+            <a href="About.dc.html" style="color:#4A3F37">About</a><a href="Blog.dc.html" style="color:#4A3F37">Blog</a>
+          </div>
+          <div style="display:flex;gap:8px"><sc-for list="{{ socials }}" as="s" hint-placeholder-count="4"><a href="#" aria-label="{{ s.label }}" style="width:34px;height:34px;border-radius:50%;background:#FFFFFF;font-size:12px;font-weight:600;display:flex;align-items:center;justify-content:center" style-hover="background:#FFCC00">{{ s.short }}</a></sc-for></div>
+        </div>
+        <div style="display:flex;justify-content:space-between;font-size:12px"><span>© 2026 Pitchvilla</span><div style="display:flex;gap:24px"><a href="#" style="color:#6B6057">Privacy</a><a href="#" style="color:#6B6057">Terms</a><a href="#" style="color:#6B6057">Cookies</a></div></div>
+      </footer>
+    </div>
+  </div>
+
+  <div id="3b" style="display:flex;flex-direction:column;gap:14px">
+    <div style="font-size:13px;font-weight:600;display:flex;gap:10px;align-items:center"><span style="background:#1C1410;color:#FFCC00;padding:3px 8px;border-radius:4px">3b</span>Mobile · 390</div>
+    <div data-screen-label="3b mobile" style="width:390px;background:#FFFFFF;display:flex;flex-direction:column;position:relative;overflow:hidden;box-shadow:0 24px 60px rgba(28,20,16,0.1)">
+      <div style="position:absolute;left:-40px;top:90px;width:470px;height:240px;border-radius:50%;background:#FFCC00;opacity:0.1;filter:blur(60px);pointer-events:none"></div>
+      <header style="position:relative;height:64px;padding:0 20px;display:flex;align-items:center;justify-content:space-between">
+        <a href="#" style="font-size:18px;font-weight:600;letter-spacing:-0.02em;display:flex;align-items:center;gap:8px"><span style="width:11px;height:11px;border-radius:50%;background:#FFCC00;display:block"></span>Pitchvilla</a>
+      </header>
+      <main style="position:relative;padding:24px 20px 36px;display:flex;flex-direction:column;align-items:center">
+        <h1 style="margin:0;font-size:28px;line-height:1.2;font-weight:300;letter-spacing:-0.03em;text-align:center;text-wrap:balance">Everything a founder needs to start, fund and scale.</h1>
+        <p style="margin:10px 0 0;font-size:14px;color:#8A7F74">What are you here for?</p>
+        <div style="margin-top:24px;width:100%;display:flex;flex-direction:column;gap:6px">
+          <sc-for list="{{ branches }}" as="b" hint-placeholder-count="8">
+            <a href="{{ b.href }}" style="background:#FAF8F3;border-radius:20px;padding:11px 16px 11px 18px;min-height:56px;display:flex;align-items:center;gap:12px;transition:background .2s ease,transform .2s ease" style-active="background:#FFCC00;transform:scale(0.98)">
+              <span style="flex:1;min-width:0;display:flex;flex-direction:column;gap:2px">
+                <span style="font-size:15px;font-weight:400;letter-spacing:-0.01em;line-height:1.25">{{ b.name }}</span>
+                <span style="font-size:12px;line-height:1.4;color:#8A7F74;text-wrap:pretty">{{ b.desc }}</span>
+              </span>
+              <span style="flex:none;display:flex;align-items:center;justify-content:center"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="#8A7F74" stroke-width="1.4"><path d="M3 8h10M9 4l4 4-4 4"></path></svg></span>
+            </a>
+          </sc-for>
+        </div>
+        <a href="#" style="margin-top:24px;min-height:44px;font-size:15px;color:#6B6057;display:flex;gap:8px;align-items:center">Not sure? <span style="color:#1C1410;font-weight:500;text-decoration:underline;text-decoration-color:#FFCC00;text-decoration-thickness:2px;text-underline-offset:5px">Talk to us</span></a>
+      </main>
+      <footer style="position:relative;border-top:1px solid rgba(28,20,16,0.06);padding:24px 20px 24px;display:flex;flex-direction:column;gap:16px;font-size:12px;color:#8A7F74">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <a href="#" style="font-size:16px;font-weight:600;letter-spacing:-0.02em;display:flex;align-items:center;gap:8px"><span style="width:9px;height:9px;border-radius:50%;background:#FFCC00;display:block"></span>Pitchvilla</a>
+          <div style="display:flex;gap:2px"><sc-for list="{{ socials }}" as="s" hint-placeholder-count="4"><a href="#" aria-label="{{ s.label }}" style="width:44px;height:44px;border-radius:50%;font-size:12px;font-weight:500;color:#6B6057;display:flex;align-items:center;justify-content:center">{{ s.short }}</a></sc-for></div>
+        </div>
+        <div style="display:flex;gap:18px;flex-wrap:wrap"><span>© 2026 Pitchvilla</span><a href="#" style="color:#8A7F74">Privacy</a><a href="#" style="color:#8A7F74">Terms</a><a href="#" style="color:#8A7F74">Cookies</a></div>
+      </footer>
+    </div>
+  </div>
+
+</div>
+</section>
+<section style="font-family:'Poppins',sans-serif;color:#1C1410;padding:64px 64px 0;display:flex;flex-direction:column;gap:24px">
+<div style="font-size:13px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#6B6057">Turn 2 · Redesign, three light directions (desktop)</div>
+<div style="display:flex;flex-wrap:wrap;gap:64px;align-items:flex-start">
+
+  <div id="2a" style="display:flex;flex-direction:column;gap:14px">
+    <div style="font-size:13px;font-weight:600;display:flex;gap:10px;align-items:center"><span style="background:#1C1410;color:#FFCC00;padding:3px 8px;border-radius:4px">2a</span>Soft buttons, centred, white page</div>
+    <div data-screen-label="2a desktop" style="width:1440px;background:#FFFFFF;display:flex;flex-direction:column;box-shadow:0 24px 60px rgba(28,20,16,0.1)">
+      <div style="height:900px;display:flex;flex-direction:column">
+        <header style="height:80px;flex:none;padding:0 72px;display:flex;align-items:center;justify-content:space-between">
+          <a href="#" style="font-size:19px;font-weight:600;letter-spacing:-0.02em;display:flex;align-items:center;gap:8px"><span style="width:12px;height:12px;border-radius:50%;background:#FFCC00;display:block"></span>Pitchvilla</a>
+          <a href="#" style="font-size:14px;font-weight:500;padding:10px 20px;border-radius:999px;background:#F6F3EC" style-hover="background:#FFCC00">Contact</a>
+        </header>
+        <main style="flex:1;min-height:0;padding:0 72px;display:flex;flex-direction:column;align-items:center;justify-content:center">
+          <h1 style="margin:0;font-size:50px;line-height:1.1;font-weight:400;letter-spacing:-0.035em;text-align:center">Everything a founder needs to start, fund and scale.</h1>
+          <p style="margin:16px 0 0;font-size:17px;color:#8A7F74">What are you here for?</p>
+          <div style="margin-top:52px;width:100%;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px">
+            <sc-for list="{{ branches }}" as="b" hint-placeholder-count="8">
+              <a href="{{ b.href }}" style="background:#F6F3EC;border-radius:24px;padding:24px 24px 24px 28px;min-height:132px;display:flex;align-items:center;gap:16px;cursor:pointer;transition:background .3s ease,transform .3s cubic-bezier(.22,.61,.36,1)" style-hover="background:#FFCC00;transform:translateY(-3px)" style-active="transform:translateY(0) scale(0.98)">
+                <span style="flex:1;min-width:0;display:flex;flex-direction:column;gap:6px">
+                  <span style="font-size:19px;font-weight:500;letter-spacing:-0.02em;line-height:1.2">{{ b.name }}</span>
+                  <span style="font-size:13px;line-height:1.45;color:#6B6057;text-wrap:pretty">{{ b.desc }}</span>
+                </span>
+                <span style="flex:none;width:40px;height:40px;border-radius:50%;background:#FFFFFF;display:flex;align-items:center;justify-content:center"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="#1C1410" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"></path></svg></span>
+              </a>
+            </sc-for>
+          </div>
+          <a href="#" style="margin-top:36px;font-size:15px;color:#6B6057;display:flex;gap:8px;align-items:center" style-hover="color:#1C1410">Not sure? <span style="color:#1C1410;font-weight:500;text-decoration:underline;text-decoration-color:#FFCC00;text-decoration-thickness:2px;text-underline-offset:5px">Talk to us</span></a>
+        </main>
+        <div style="height:40px;flex:none"></div>
+      </div>
+      <footer style="background:#F6F3EC;padding:40px 72px 28px;display:flex;flex-direction:column;gap:28px;font-size:13px;color:#6B6057">
+        <div style="display:flex;justify-content:space-between;gap:48px;align-items:flex-start">
+          <a href="#" style="font-size:17px;font-weight:600;letter-spacing:-0.02em;display:flex;align-items:center;gap:8px"><span style="width:10px;height:10px;border-radius:50%;background:#FFCC00;display:block"></span>Pitchvilla</a>
+          <div style="flex:1;max-width:760px;display:flex;flex-wrap:wrap;gap:12px 28px">
+            <sc-for list="{{ branches }}" as="b" hint-placeholder-count="8"><a href="{{ b.href }}" style="color:#4A3F37" style-hover="color:#1C1410">{{ b.name }}</a></sc-for>
+            <a href="About.dc.html" style="color:#4A3F37">About</a><a href="Blog.dc.html" style="color:#4A3F37">Blog</a>
+          </div>
+          <div style="display:flex;gap:8px"><sc-for list="{{ socials }}" as="s" hint-placeholder-count="4"><a href="#" aria-label="{{ s.label }}" style="width:34px;height:34px;border-radius:50%;background:#FFFFFF;font-size:12px;font-weight:600;display:flex;align-items:center;justify-content:center" style-hover="background:#FFCC00">{{ s.short }}</a></sc-for></div>
+        </div>
+        <div style="display:flex;justify-content:space-between;font-size:12px"><span>© 2026 Pitchvilla</span><div style="display:flex;gap:24px"><a href="#" style="color:#6B6057">Privacy</a><a href="#" style="color:#6B6057">Terms</a><a href="#" style="color:#6B6057">Cookies</a></div></div>
+      </footer>
+    </div>
+  </div>
+
+  <div id="2b" style="display:flex;flex-direction:column;gap:14px">
+    <div style="font-size:13px;font-weight:600;display:flex;gap:10px;align-items:center"><span style="background:#1C1410;color:#FFCC00;padding:3px 8px;border-radius:4px">2b</span>Pale-yellow tiles with an Explore pill</div>
+    <div data-screen-label="2b desktop" style="width:1440px;background:#FFFDF7;display:flex;flex-direction:column;box-shadow:0 24px 60px rgba(28,20,16,0.1)">
+      <div style="height:900px;display:flex;flex-direction:column">
+        <header style="height:80px;flex:none;padding:0 72px;display:flex;align-items:center;justify-content:space-between">
+          <a href="#" style="font-size:19px;font-weight:600;letter-spacing:-0.02em;display:flex;align-items:center;gap:8px"><span style="width:12px;height:12px;border-radius:50%;background:#FFCC00;display:block"></span>Pitchvilla</a>
+          <a href="#" style="font-size:14px;font-weight:500" style-hover="text-decoration:underline;text-decoration-color:#FFCC00;text-decoration-thickness:2px;text-underline-offset:5px">Contact</a>
+        </header>
+        <main style="flex:1;min-height:0;padding:40px 72px 0;display:flex;flex-direction:column">
+          <h1 style="margin:0;font-size:48px;line-height:1.1;font-weight:400;letter-spacing:-0.035em">Everything a founder needs to start, fund and scale.</h1>
+          <p style="margin:14px 0 0;font-size:17px;color:#8A7F74">What are you here for?</p>
+          <div style="margin-top:44px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-template-rows:repeat(2,minmax(0,1fr));gap:16px;height:480px">
+            <sc-for list="{{ branches }}" as="b" hint-placeholder-count="8">
+              <a href="{{ b.href }}" style="background:#FFF6D1;border-radius:20px;padding:24px;display:flex;flex-direction:column;cursor:pointer;transition:background .3s ease,transform .3s cubic-bezier(.22,.61,.36,1)" style-hover="background:#FFE680;transform:translateY(-3px)" style-active="transform:scale(0.98)">
+                <span style="font-size:12px;letter-spacing:0.12em;color:#8A7F74">{{ b.n }}</span>
+                <span style="margin-top:auto;font-size:22px;font-weight:500;letter-spacing:-0.02em;line-height:1.2">{{ b.name }}</span>
+                <span style="margin-top:8px;font-size:13px;line-height:1.5;color:#6B6057;text-wrap:pretty;min-height:39px">{{ b.desc }}</span>
+                <span style="margin-top:18px;align-self:flex-start;background:#FFFFFF;border-radius:999px;padding:9px 16px;font-size:13px;font-weight:500;display:flex;gap:8px;align-items:center">Explore<svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="#1C1410" stroke-width="1.8"><path d="M3 8h10M9 4l4 4-4 4"></path></svg></span>
+              </a>
+            </sc-for>
+          </div>
+          <a href="#" style="margin-top:28px;align-self:center;font-size:15px;font-weight:500;padding:12px 22px;border-radius:999px;background:#FFCC00" style-hover="background:#F2BF00">Not sure? Talk to us</a>
+        </main>
+      </div>
+      <footer style="border-top:1px solid rgba(28,20,16,0.06);padding:36px 72px 28px;display:flex;flex-direction:column;gap:24px;font-size:13px;color:#6B6057">
+        <div style="display:flex;justify-content:space-between;gap:48px;align-items:flex-start">
+          <a href="#" style="font-size:17px;font-weight:600;letter-spacing:-0.02em;display:flex;align-items:center;gap:8px"><span style="width:10px;height:10px;border-radius:50%;background:#FFCC00;display:block"></span>Pitchvilla</a>
+          <div style="flex:1;max-width:760px;display:flex;flex-wrap:wrap;gap:12px 28px">
+            <sc-for list="{{ branches }}" as="b" hint-placeholder-count="8"><a href="{{ b.href }}" style="color:#4A3F37">{{ b.name }}</a></sc-for>
+            <a href="About.dc.html" style="color:#4A3F37">About</a><a href="Blog.dc.html" style="color:#4A3F37">Blog</a>
+          </div>
+          <div style="display:flex;gap:8px"><sc-for list="{{ socials }}" as="s" hint-placeholder-count="4"><a href="#" aria-label="{{ s.label }}" style="width:34px;height:34px;border-radius:50%;background:#FFF6D1;font-size:12px;font-weight:600;display:flex;align-items:center;justify-content:center" style-hover="background:#FFCC00">{{ s.short }}</a></sc-for></div>
+        </div>
+        <div style="display:flex;justify-content:space-between;font-size:12px"><span>© 2026 Pitchvilla</span><div style="display:flex;gap:24px"><a href="#" style="color:#6B6057">Privacy</a><a href="#" style="color:#6B6057">Terms</a><a href="#" style="color:#6B6057">Cookies</a></div></div>
+      </footer>
+    </div>
+  </div>
+
+  <div id="2c" style="display:flex;flex-direction:column;gap:14px">
+    <div style="font-size:13px;font-weight:600;display:flex;gap:10px;align-items:center"><span style="background:#1C1410;color:#FFCC00;padding:3px 8px;border-radius:4px">2c</span>Ghost buttons, lightest</div>
+    <div data-screen-label="2c desktop" style="width:1440px;background:#FFFFFF;display:flex;flex-direction:column;box-shadow:0 24px 60px rgba(28,20,16,0.1)">
+      <div style="height:900px;display:flex;flex-direction:column">
+        <header style="height:80px;flex:none;padding:0 72px;display:flex;align-items:center;justify-content:space-between">
+          <a href="#" style="font-size:19px;font-weight:600;letter-spacing:-0.02em;display:flex;align-items:center;gap:8px"><span style="width:12px;height:12px;border-radius:50%;background:#FFCC00;display:block"></span>Pitchvilla</a>
+          <a href="#" style="font-size:14px;font-weight:500;color:#6B6057" style-hover="color:#1C1410">Contact</a>
+        </header>
+        <main style="flex:1;min-height:0;padding:0 72px;display:flex;flex-direction:column;justify-content:center">
+          <h1 style="margin:0;font-size:46px;line-height:1.1;font-weight:300;letter-spacing:-0.03em">Everything a founder needs to start, fund and scale.</h1>
+          <p style="margin:14px 0 0;font-size:16px;color:#8A7F74">What are you here for?</p>
+          <div style="margin-top:48px;margin-left:-20px;margin-right:-20px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px">
+            <sc-for list="{{ branches }}" as="b" hint-placeholder-count="8">
+              <a href="{{ b.href }}" style="border-radius:20px;padding:22px 20px;min-height:150px;display:flex;flex-direction:column;cursor:pointer;transition:background .3s ease" style-hover="background:#FFF3C2" style-active="background:#FFE680">
+                <span style="display:flex;justify-content:space-between;align-items:center"><span style="width:8px;height:8px;border-radius:50%;background:#FFCC00;display:block"></span><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#1C1410" stroke-width="1.4"><path d="M4 12L12 4M5 4h7v7"></path></svg></span>
+                <span style="margin-top:auto;font-size:21px;font-weight:400;letter-spacing:-0.02em;line-height:1.2">{{ b.name }}</span>
+                <span style="margin-top:6px;font-size:13px;line-height:1.5;color:#8A7F74;text-wrap:pretty;min-height:39px">{{ b.desc }}</span>
+              </a>
+            </sc-for>
+          </div>
+          <a href="#" style="margin-top:36px;font-size:15px;color:#6B6057" style-hover="color:#1C1410">Not sure? <span style="color:#1C1410;font-weight:500">Talk to us →</span></a>
+        </main>
+        <div style="height:40px;flex:none"></div>
+      </div>
+      <footer style="padding:36px 72px 28px;display:flex;flex-direction:column;gap:24px;font-size:13px;color:#8A7F74;border-top:1px solid rgba(28,20,16,0.06)">
+        <div style="display:flex;justify-content:space-between;gap:48px;align-items:flex-start">
+          <a href="#" style="font-size:17px;font-weight:600;letter-spacing:-0.02em;display:flex;align-items:center;gap:8px"><span style="width:10px;height:10px;border-radius:50%;background:#FFCC00;display:block"></span>Pitchvilla</a>
+          <div style="flex:1;max-width:760px;display:flex;flex-wrap:wrap;gap:12px 28px">
+            <sc-for list="{{ branches }}" as="b" hint-placeholder-count="8"><a href="{{ b.href }}" style="color:#6B6057">{{ b.name }}</a></sc-for>
+            <a href="About.dc.html" style="color:#6B6057">About</a><a href="Blog.dc.html" style="color:#6B6057">Blog</a>
+          </div>
+          <div style="display:flex;gap:8px"><sc-for list="{{ socials }}" as="s" hint-placeholder-count="4"><a href="#" aria-label="{{ s.label }}" style="width:34px;height:34px;border-radius:50%;font-size:12px;font-weight:600;color:#4A3F37;display:flex;align-items:center;justify-content:center" style-hover="background:#FFF3C2">{{ s.short }}</a></sc-for></div>
+        </div>
+        <div style="display:flex;justify-content:space-between;font-size:12px"><span>© 2026 Pitchvilla</span><div style="display:flex;gap:24px"><a href="#" style="color:#8A7F74">Privacy</a><a href="#" style="color:#8A7F74">Terms</a><a href="#" style="color:#8A7F74">Cookies</a></div></div>
+      </footer>
+    </div>
+  </div>
+
+</div>
+</section>
+<section style="font-family:'Poppins',sans-serif;color:#1C1410;padding:64px;display:flex;flex-wrap:wrap;gap:64px;align-items:flex-start">
+
+  <div id="1a" style="display:flex;flex-direction:column;gap:14px">
+    <div style="font-size:13px;font-weight:600;display:flex;gap:10px;align-items:center"><span style="background:#1C1410;color:#FFCC00;padding:3px 8px;border-radius:4px">1a</span>Desktop · 1440 wide · first screen 900 tall, footer below</div>
+    <div data-screen-label="Home desktop" style="width:1440px;background:#FBF8F1;display:flex;flex-direction:column;overflow:hidden;box-shadow:0 1px 0 rgba(28,20,16,0.1),0 24px 60px rgba(28,20,16,0.12)">
+      <header style="height:64px;flex:none;padding:0 64px;display:flex;align-items:center;justify-content:space-between">
+        <a href="#" style="font-size:19px;font-weight:600;letter-spacing:-0.02em;display:flex;align-items:center;gap:8px"><span style="width:12px;height:12px;border-radius:50%;background:#FFCC00;display:block"></span>Pitchvilla</a>
+        <nav style="display:flex;gap:32px;font-size:14px;font-weight:500;align-items:center">
+          <a href="#" style="padding:4px 0;background:linear-gradient(#FFCC00,#FFCC00) no-repeat 0 100% / 0% 3px;transition:background-size .6s cubic-bezier(.22,.61,.36,1)" style-hover="background-size:100% 3px">Contact</a>
+        </nav>
+      </header>
+      <main style="height:784px;flex:none;padding:52px 64px 0;display:flex;flex-direction:column">
+        <h1 style="margin:0;font-size:52px;line-height:1.1;font-weight:500;letter-spacing:-0.035em;white-space:nowrap">Everything a founder needs to <span style="text-decoration:underline;text-decoration-color:#FFCC00;text-decoration-thickness:4px;text-underline-offset:10px;text-decoration-skip-ink:none">start, fund and scale.</span></h1>
+        <p style="margin:14px 0 0;font-size:17px;color:#6B6057">What are you here for?</p>
+        <div style="margin-top:36px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-template-rows:repeat(2,minmax(0,1fr));gap:16px;height:500px">
+          <sc-for list="{{ branches }}" as="b" hint-placeholder-count="8">
+            <a href="{{ b.href }}" style="background:#FFFFFF;border-radius:18px;padding:22px 24px 20px;display:flex;flex-direction:column;box-shadow:0 1px 2px rgba(28,20,16,0.04),0 6px 20px rgba(28,20,16,0.05);cursor:pointer;transition:background .3s ease,transform .3s cubic-bezier(.22,.61,.36,1),box-shadow .3s ease" style-hover="background:#FFCC00;transform:translateY(-4px);box-shadow:0 14px 30px rgba(28,20,16,0.1)" style-active="transform:translateY(-1px)">
+              <div style="display:flex;justify-content:space-between;align-items:center;font-size:12px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#8A7F74"><span>{{ b.n }}</span><span style="letter-spacing:0.1em">{{ b.tag }}</span></div>
+              <div style="margin-top:auto;font-size:13px;font-weight:400;color:#8A7F74">Pitchvilla</div>
+              <div style="margin-top:2px;font-size:26px;line-height:1.15;font-weight:500;letter-spacing:-0.025em;text-wrap:balance">{{ b.name }}</div>
+              <div style="margin-top:10px;font-size:14px;line-height:1.5;color:#6B6057;text-wrap:pretty;min-height:42px">{{ b.desc }}</div>
+              <div style="margin-top:12px;display:flex;justify-content:flex-end"><span style="width:36px;height:36px;border-radius:50%;background:#FBF8F1;display:flex;align-items:center;justify-content:center"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="#1C1410" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"></path></svg></span></div>
+            </a>
+          </sc-for>
+        </div>
+        <div style="margin-top:22px;display:flex;justify-content:center">
+          <a href="#" style="font-size:15px;font-weight:500;padding-bottom:3px;background:linear-gradient(#1C1410,#1C1410) no-repeat 0 100% / 100% 1px" style-hover="background:linear-gradient(#FFCC00,#FFCC00) no-repeat 0 100% / 100% 3px">Not sure? Talk to us</a>
+        </div>
+      </main>
+      <footer style="background:#F3EDE0;color:#1C1410">
+        <div style="padding:64px 64px 48px;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,2fr) minmax(0,1fr) minmax(0,1fr);gap:48px">
+          <div style="display:flex;flex-direction:column;gap:16px">
+            <a href="#" style="color:#1C1410;font-size:19px;font-weight:600;letter-spacing:-0.02em;display:flex;align-items:center;gap:8px"><span style="width:12px;height:12px;border-radius:50%;background:#FFCC00;display:block"></span>Pitchvilla</a>
+            <p style="margin:0;font-size:14px;line-height:1.6;color:#6B6057;max-width:280px">Everything a founder needs to start, fund and scale.</p>
+          </div>
+          <div>
+            <div style="font-size:12px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#8A7F74">Branches</div>
+            <div style="margin-top:18px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 32px">
+              <sc-for list="{{ branches }}" as="b" hint-placeholder-count="8"><a href="{{ b.href }}" style="color:#1C1410;font-size:14px" style-hover="color:#1C1410;text-decoration:underline;text-decoration-color:#FFCC00;text-decoration-thickness:2px;text-underline-offset:4px">{{ b.name }}</a></sc-for>
+            </div>
+          </div>
+          <div>
+            <div style="font-size:12px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#8A7F74">Company</div>
+            <div style="margin-top:18px;display:flex;flex-direction:column;gap:12px;font-size:14px">
+              <a href="About.dc.html" style="color:#1C1410" style-hover="color:#1C1410;text-decoration:underline;text-decoration-color:#FFCC00;text-decoration-thickness:2px;text-underline-offset:4px">About</a>
+              <a href="Blog.dc.html" style="color:#1C1410" style-hover="color:#1C1410;text-decoration:underline;text-decoration-color:#FFCC00;text-decoration-thickness:2px;text-underline-offset:4px">Blog</a>
+              <a href="#" style="color:#1C1410" style-hover="color:#1C1410;text-decoration:underline;text-decoration-color:#FFCC00;text-decoration-thickness:2px;text-underline-offset:4px">Contact</a>
+            </div>
+          </div>
+          <div>
+            <div style="font-size:12px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#8A7F74">Follow</div>
+            <div style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap">
+              <sc-for list="{{ socials }}" as="s" hint-placeholder-count="4"><a href="#" aria-label="{{ s.label }}" style="color:#1C1410;font-size:12px;font-weight:600;width:36px;height:36px;border-radius:50%;background:#FBF8F1;display:flex;align-items:center;justify-content:center" style-hover="background:#FFCC00;border-color:#FFCC00;color:#1C1410">{{ s.short }}</a></sc-for>
+            </div>
+          </div>
+        </div>
+        <div style="margin:0 64px;padding:20px 0 28px;border-top:1px solid rgba(28,20,16,0.1);display:flex;justify-content:space-between;align-items:center;font-size:12px;color:#6B6057">
+          <span>© 2026 Pitchvilla</span>
+          <div style="display:flex;gap:24px"><a href="#" style="color:#6B6057" style-hover="color:#1C1410;text-decoration:underline;text-decoration-color:#FFCC00;text-decoration-thickness:2px;text-underline-offset:4px">Privacy</a><a href="#" style="color:#6B6057" style-hover="color:#1C1410;text-decoration:underline;text-decoration-color:#FFCC00;text-decoration-thickness:2px;text-underline-offset:4px">Terms</a><a href="#" style="color:#6B6057" style-hover="color:#1C1410;text-decoration:underline;text-decoration-color:#FFCC00;text-decoration-thickness:2px;text-underline-offset:4px">Cookies</a></div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <div id="1b" style="display:flex;flex-direction:column;gap:14px">
+    <div style="font-size:13px;font-weight:600;display:flex;gap:10px;align-items:center"><span style="background:#1C1410;color:#FFCC00;padding:3px 8px;border-radius:4px">1b</span>Mobile · 390</div>
+    <div data-screen-label="Home mobile" style="width:390px;background:#FBF8F1;display:flex;flex-direction:column;box-shadow:0 1px 0 rgba(28,20,16,0.1),0 24px 60px rgba(28,20,16,0.12)">
+      <header style="height:60px;padding:0 20px;display:flex;align-items:center;justify-content:space-between">
+        <a href="#" style="font-size:18px;font-weight:600;letter-spacing:-0.02em;display:flex;align-items:center;gap:8px"><span style="width:11px;height:11px;border-radius:50%;background:#FFCC00;display:block"></span>Pitchvilla</a>
+        <nav style="display:flex;gap:4px;font-size:14px;font-weight:500;align-items:center">
+          <a href="#" style="padding:12px 10px">Contact</a>
+        </nav>
+      </header>
+      <main style="padding:36px 20px 0">
+        <h1 style="margin:0;font-size:34px;line-height:1.12;font-weight:500;letter-spacing:-0.03em;text-wrap:balance">Everything a founder needs to <span style="text-decoration:underline;text-decoration-color:#FFCC00;text-decoration-thickness:3px;text-underline-offset:7px;text-decoration-skip-ink:none">start, fund and scale.</span></h1>
+        <p style="margin:12px 0 0;font-size:16px;color:#6B6057">What are you here for?</p>
+        <div style="margin-top:28px;display:flex;flex-direction:column;gap:10px">
+          <sc-for list="{{ branches }}" as="b" hint-placeholder-count="8">
+            <a href="{{ b.href }}" style="display:grid;grid-template-columns:30px minmax(0,1fr) 36px;gap:12px;align-items:center;padding:16px;background:#FFFFFF;border-radius:16px;box-shadow:0 1px 2px rgba(28,20,16,0.04),0 6px 20px rgba(28,20,16,0.05);min-height:44px;transition:background .2s ease,transform .2s ease" style-active="background:#FFCC00;transform:scale(0.98)">
+              <span style="font-size:12px;font-weight:500;letter-spacing:0.1em;align-self:start;padding-top:4px;color:#8A7F74">{{ b.n }}</span>
+              <span style="min-width:0;display:flex;flex-direction:column">
+                <span style="font-size:18px;font-weight:500;letter-spacing:-0.02em;line-height:1.25">{{ b.name }}</span>
+                <span style="margin-top:3px;font-size:13px;line-height:1.45;color:#6B6057;text-wrap:pretty">{{ b.desc }}</span>
+              </span>
+              <span style="width:36px;height:36px;border-radius:50%;background:#FBF8F1;display:flex;align-items:center;justify-content:center"><svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="#1C1410" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"></path></svg></span>
+            </a>
+          </sc-for>
+        </div>
+        <a href="#" style="margin:28px 0 36px;display:flex;justify-content:center;align-items:center;min-height:52px;border-radius:12px;background:#FFCC00;font-size:15px;font-weight:500">Not sure? Talk to us</a>
+      </main>
+      <footer style="background:#F3EDE0;color:#1C1410;padding:40px 20px 28px;display:flex;flex-direction:column;gap:32px">
+        <div style="display:flex;flex-direction:column;gap:12px">
+          <a href="#" style="color:#1C1410;font-size:18px;font-weight:600;letter-spacing:-0.02em;display:flex;align-items:center;gap:8px"><span style="width:11px;height:11px;border-radius:50%;background:#FFCC00;display:block"></span>Pitchvilla</a>
+          <p style="margin:0;font-size:14px;line-height:1.6;color:#6B6057">Everything a founder needs to start, fund and scale.</p>
+        </div>
+        <div>
+          <div style="font-size:12px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#8A7F74">Branches</div>
+          <div style="margin-top:8px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:16px">
+            <sc-for list="{{ branches }}" as="b" hint-placeholder-count="8"><a href="{{ b.href }}" style="color:#1C1410;font-size:14px;min-height:44px;display:flex;align-items:center">{{ b.name }}</a></sc-for>
+          </div>
+        </div>
+        <div>
+          <div style="font-size:12px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#8A7F74">Company</div>
+          <div style="margin-top:8px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:16px;font-size:14px">
+            <a href="About.dc.html" style="color:#1C1410;min-height:44px;display:flex;align-items:center">About</a>
+            <a href="Blog.dc.html" style="color:#1C1410;min-height:44px;display:flex;align-items:center">Blog</a>
+            <a href="#" style="color:#1C1410;min-height:44px;display:flex;align-items:center">Contact</a>
+          </div>
+        </div>
+        <div style="display:flex;gap:10px">
+          <sc-for list="{{ socials }}" as="s" hint-placeholder-count="4"><a href="#" aria-label="{{ s.label }}" style="color:#1C1410;font-size:12px;font-weight:600;width:44px;height:44px;border-radius:50%;background:#FBF8F1;display:flex;align-items:center;justify-content:center">{{ s.short }}</a></sc-for>
+        </div>
+        <div style="padding-top:18px;border-top:1px solid rgba(28,20,16,0.1);display:flex;gap:18px;flex-wrap:wrap;font-size:12px;color:#6B6057"><span>© 2026 Pitchvilla</span><a href="#" style="color:#6B6057">Privacy</a><a href="#" style="color:#6B6057">Terms</a><a href="#" style="color:#6B6057">Cookies</a></div>
+      </footer>
+    </div>
+  </div>
+
+</section>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { shown: false };
+  componentDidMount() { this.t = setTimeout(() => this.setState({ shown: true }), 80); }
+  componentWillUnmount() { clearTimeout(this.t); }
+  renderVals() {
+    const on = this.state.shown;
+    const b = [
+      ["100X Forge", "Startup Founders Cohort Program", "Build"],
+      ["Consulting Group", "For Startups, SMEs & Businesses to Reinvent & Scale", "Advise"],
+      ["Funding", "Connect with Angel & Seed Investors", "Fund"],
+      ["Technology Framework", "In-house Tech Products for Startups", "Tech"],
+      ["Events", "Founder & Business Community Events", "Meet"],
+      ["Talent", "Hiring, Leadership & Fractional CXO Solutions", "Hire"],
+      ["Ventures", "Investment & Strategic Business Opportunities", "Invest"],
+      ["Growth Lab", "Marketing, Sales & Revenue Acceleration", "Grow"]
+    ];
+    return {
+      intro: { o: on ? 1 : 0, y: on ? 0 : 14 },
+      branches: b.map(([name, desc, tag], i) => ({ n: String(i + 1).padStart(2, "0"), name, desc, tag, href: i === 0 ? "Pitchvilla Website v4.dc.html" : "#", o: on ? 1 : 0, y: on ? 0 : 12, d: 250 + i * 60 })),
+      socials: [{ label: "LinkedIn", short: "in" }, { label: "Instagram", short: "ig" }, { label: "X", short: "x" }, { label: "YouTube", short: "yt" }]
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>body{margin:0;background:#FBF8F1;color:#1C1410;font-family:'Poppins',sans-serif;-webkit-font-smoothing:antialiased}a{color:#1C1410;text-decoration:none}a:hover{color:#1C1410}*{box-sizing:border-box}html{scroll-behavior:smooth}h1,h2,h3,p{text-wrap:pretty}@media (max-width:900px){[data-desk]{display:none !important}[data-toc]{display:none !important}[data-pad]{padding-top:56px !important;padding-bottom:56px !important}}[data-dd]:hover>[data-dd-menu],[data-dd]:focus-within>[data-dd-menu]{opacity:1 !important;visibility:visible !important;transform:none !important}[data-dd]:hover>button svg,[data-dd]:focus-within>button svg{transform:rotate(180deg)}details[data-nav] summary::-webkit-details-marker{display:none}details[data-nav][open] [data-bar="1"]{transform:translateY(7px) rotate(45deg)}details[data-nav][open] [data-bar="2"]{opacity:0}details[data-nav][open] [data-bar="3"]{transform:translateY(-7px) rotate(-45deg)}@media (max-width:900px){[data-nav="desk"]{display:none !important}[data-nav="mob"]{display:block !important}}[data-sub]:hover>[data-sub-menu],[data-sub]:focus-within>[data-sub-menu]{opacity:1 !important;visibility:visible !important;transform:none !important}[data-sub]:hover>a,[data-sub]:focus-within>a{background:#F3EDE0}@media (max-width:860px){[data-m2]{grid-template-columns:1fr 1fr !important}[data-auto]{grid-template-columns:1fr 1fr !important}}</style>
+</helmet>
+<div style="font-family:'Poppins',sans-serif;color:#1C1410;background:#FBF8F1;overflow-x:clip;position:relative">
+  <div style="position:fixed;inset:0;pointer-events:none;z-index:40;opacity:0.07;mix-blend-mode:multiply;background-image:url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxNjAnIGhlaWdodD0nMTYwJz48ZmlsdGVyIGlkPSduJz48ZmVUdXJidWxlbmNlIHR5cGU9J2ZyYWN0YWxOb2lzZScgYmFzZUZyZXF1ZW5jeT0nMC45JyBudW1PY3RhdmVzPScyJyBzdGl0Y2hUaWxlcz0nc3RpdGNoJy8+PC9maWx0ZXI+PHJlY3Qgd2lkdGg9JzEwMCUnIGhlaWdodD0nMTAwJScgZmlsdGVyPSd1cmwoI24pJy8+PC9zdmc+&quot;)"></div>
+
+  <div style="background:#F3EDE0;border-bottom:1px solid rgba(28,20,16,0.1)">
+    <div style="max-width:1280px;margin:0 auto;padding:0 clamp(24px,6vw,96px);height:36px;display:flex;align-items:center">
+      <a href="Pitchvilla Website v4.dc.html" style="font-size:12px;font-weight:500;color:#4A3F37;display:flex;align-items:center;gap:8px;height:36px" style-hover="color:#1C1410"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M10 3.5 5.5 8l4.5 4.5"></path></svg>Back to 100X Forge</a>
+    </div>
+  </div>
+  <header style="position:sticky;top:0;z-index:30;background:#FBF8F1;border-bottom:1px solid rgba(28,20,16,0.2)">
+    <div style="max-width:1280px;margin:0 auto;padding:0 clamp(24px,6vw,96px);height:64px;display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:24px">
+      <a href="Pitchvilla Website v4.dc.html" style="display:flex;align-items:center;gap:10px"><img src="assets/pitchvilla-wordmark.png" alt="Pitchvilla" style="height:15px;width:auto;flex:none;display:block"><span style="white-space:nowrap;font-size:12px;font-weight:500;color:#6B5E54;border-left:1px solid rgba(28,20,16,0.25);padding-left:10px">100X Forge</span></a>
+      <nav data-nav="desk" style="display:flex;gap:40px;font-size:15px;font-weight:500;align-items:center">
+        <a href="Pitchvilla Website v4.dc.html" style="background:linear-gradient(#FFCC00,#FFCC00) no-repeat 0 100% / 0% 3px;transition:background-size .7s cubic-bezier(.22,.61,.36,1);padding:4px 0" style-hover="background-size:100% 3px">Home</a>
+        <div data-dd="1" style="position:relative">
+          <button type="button" style="all:unset;cursor:pointer;display:flex;align-items:center;gap:6px;font-size:15px;font-weight:500;background:linear-gradient(#FFCC00,#FFCC00) no-repeat 0 100% / 0% 3px;transition:background-size .7s cubic-bezier(.22,.61,.36,1);padding:4px 0" style-hover="background-size:100% 3px">About us <svg width="10" height="10" viewBox="0 0 16 16" fill="none" style="transition:transform .3s ease"><path d="M3.5 6l4.5 4.5L12.5 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+          <div data-dd-menu="1" style="position:absolute;top:100%;left:-16px;padding-top:12px;opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .2s ease,transform .25s ease,visibility .2s;z-index:40">
+            <div style="min-width:200px;background:#FBF8F1;border:1px solid rgba(28,20,16,0.14);border-radius:10px;padding:6px;display:flex;flex-direction:column;box-shadow:0 12px 32px -16px rgba(28,20,16,0.3)">
+              <a href="About.dc.html" style="padding:9px 12px;border-radius:6px;font-size:14px;font-weight:500;white-space:nowrap" style-hover="background:#F3EDE0">About Pitchvilla</a>
+              <a href="Interview Prep.dc.html" style="padding:9px 12px;border-radius:6px;font-size:14px;font-weight:500;white-space:nowrap" style-hover="background:#F3EDE0">Interview Guide</a>
+              <a href="Pitchvilla Website v4.dc.html#faq" style="padding:9px 12px;border-radius:6px;font-size:14px;font-weight:500;white-space:nowrap" style-hover="background:#F3EDE0">FAQ</a>
+            </div>
+          </div>
+        </div>
+        <div data-dd="1" style="position:relative">
+          <button type="button" style="all:unset;cursor:pointer;display:flex;align-items:center;gap:6px;font-size:15px;font-weight:500;background:linear-gradient(#FFCC00,#FFCC00) no-repeat 0 100% / 0% 3px;transition:background-size .7s cubic-bezier(.22,.61,.36,1);padding:4px 0" style-hover="background-size:100% 3px">Services <svg width="10" height="10" viewBox="0 0 16 16" fill="none" style="transition:transform .3s ease"><path d="M3.5 6l4.5 4.5L12.5 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+          <div data-dd-menu="1" style="position:absolute;top:100%;left:-16px;padding-top:12px;opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .2s ease,transform .25s ease,visibility .2s;z-index:40">
+            <div style="min-width:180px;background:#FBF8F1;border:1px solid rgba(28,20,16,0.14);border-radius:10px;padding:6px;display:flex;flex-direction:column;box-shadow:0 12px 32px -16px rgba(28,20,16,0.3)">
+              <div data-sub="1" style="position:relative">
+                <a tabindex="0" role="button" style="cursor:default;padding:9px 12px;border-radius:6px;font-size:14px;font-weight:500;white-space:nowrap;display:flex;align-items:center;justify-content:space-between;gap:24px">Launch<svg width="10" height="10" viewBox="0 0 16 16" fill="none"><path d="M6 3.5l4.5 4.5L6 12.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+                <div data-sub-menu="1" style="position:absolute;top:-6px;left:100%;padding-left:8px;opacity:0;visibility:hidden;transform:translateX(-4px);transition:opacity .2s ease,transform .2s ease,visibility .2s;z-index:41">
+                  <div style="min-width:220px;background:#FBF8F1;border:1px solid rgba(28,20,16,0.14);border-radius:10px;padding:6px;display:flex;flex-direction:column;box-shadow:0 12px 32px -16px rgba(28,20,16,0.3)">
+                    <a href="Idea Validation.dc.html" style="padding:9px 12px;border-radius:6px;font-size:14px;font-weight:500;white-space:nowrap" style-hover="background:#F3EDE0">Idea Validation</a>
+                    <a href="Launch Your Startup.dc.html" style="padding:9px 12px;border-radius:6px;font-size:14px;font-weight:500;white-space:nowrap" style-hover="background:#F3EDE0">Launch Your Startup</a>
+                    <a href="Pitch Deck Creation.dc.html" style="padding:9px 12px;border-radius:6px;font-size:14px;font-weight:500;white-space:nowrap" style-hover="background:#F3EDE0">Pitch Deck Creation</a>
+                  </div>
+                </div>
+              </div>
+              <div data-sub="1" style="position:relative">
+                <a tabindex="0" role="button" style="cursor:default;padding:9px 12px;border-radius:6px;font-size:14px;font-weight:500;white-space:nowrap;display:flex;align-items:center;justify-content:space-between;gap:24px">Grow<svg width="10" height="10" viewBox="0 0 16 16" fill="none"><path d="M6 3.5l4.5 4.5L6 12.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+                <div data-sub-menu="1" style="position:absolute;top:-6px;left:100%;padding-left:8px;opacity:0;visibility:hidden;transform:translateX(-4px);transition:opacity .2s ease,transform .2s ease,visibility .2s;z-index:41">
+                  <div style="min-width:220px;background:#FBF8F1;border:1px solid rgba(28,20,16,0.14);border-radius:10px;padding:6px;display:flex;flex-direction:column;box-shadow:0 12px 32px -16px rgba(28,20,16,0.3)">
+                    <a href="Business Strategy.dc.html" style="padding:9px 12px;border-radius:6px;font-size:14px;font-weight:500;white-space:nowrap" style-hover="background:#F3EDE0">Business Strategy</a>
+                    <a href="Financial Analysis.dc.html" style="padding:9px 12px;border-radius:6px;font-size:14px;font-weight:500;white-space:nowrap" style-hover="background:#F3EDE0">Financial Analysis</a>
+                    <a href="Digital Marketing.dc.html" style="padding:9px 12px;border-radius:6px;font-size:14px;font-weight:500;white-space:nowrap" style-hover="background:#F3EDE0">Digital Marketing</a>
+                    <a href="Hiring and Team Building.dc.html" style="padding:9px 12px;border-radius:6px;font-size:14px;font-weight:500;white-space:nowrap" style-hover="background:#F3EDE0">Hiring &amp; Team Building</a>
+                  </div>
+                </div>
+              </div>
+              <div data-sub="1" style="position:relative">
+                <a tabindex="0" role="button" style="cursor:default;padding:9px 12px;border-radius:6px;font-size:14px;font-weight:500;white-space:nowrap;display:flex;align-items:center;justify-content:space-between;gap:24px">Raise<svg width="10" height="10" viewBox="0 0 16 16" fill="none"><path d="M6 3.5l4.5 4.5L6 12.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+                <div data-sub-menu="1" style="position:absolute;top:-6px;left:100%;padding-left:8px;opacity:0;visibility:hidden;transform:translateX(-4px);transition:opacity .2s ease,transform .2s ease,visibility .2s;z-index:41">
+                  <div style="min-width:220px;background:#FBF8F1;border:1px solid rgba(28,20,16,0.14);border-radius:10px;padding:6px;display:flex;flex-direction:column;box-shadow:0 12px 32px -16px rgba(28,20,16,0.3)">
+                    <a href="Investor Readiness.dc.html" style="padding:9px 12px;border-radius:6px;font-size:14px;font-weight:500;white-space:nowrap" style-hover="background:#F3EDE0">Investor Readiness</a>
+                    <a href="Pitch to Investors.dc.html" style="padding:9px 12px;border-radius:6px;font-size:14px;font-weight:500;white-space:nowrap" style-hover="background:#F3EDE0">Pitch to Investors</a>
+                  </div>
+                </div>
+              </div>
+              
+              </div>
+          </div>
+        </div>
+      </nav>
+      <a data-nav="desk" href="Apply.dc.html" style="justify-self:end;background:#FFCC00;border-radius:8px;padding:10px 18px;font-size:14px;font-weight:600" style-hover="background:#F2BF00">Apply</a>
+      <details data-nav="mob" style="position:relative;display:none;grid-column:3;justify-self:end">
+        <summary aria-label="Menu" style="list-style:none;cursor:pointer;width:44px;height:44px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;margin-right:-10px"><span data-bar="1" style="width:22px;height:2px;border-radius:2px;background:#1C1410;display:block;transition:transform .3s ease,opacity .3s ease"></span><span data-bar="2" style="width:22px;height:2px;border-radius:2px;background:#1C1410;display:block;transition:opacity .2s ease"></span><span data-bar="3" style="width:22px;height:2px;border-radius:2px;background:#1C1410;display:block;transition:transform .3s ease"></span></summary>
+        <div style="position:fixed;top:64px;right:0;bottom:0;width:min(86vw,380px);background:#FBF8F1;border-left:1px solid rgba(28,20,16,0.2);box-shadow:0 0 0 100vmax rgba(28,20,16,0.4);padding:16px 28px 32px;display:flex;flex-direction:column;z-index:50;overflow-y:auto">
+          <a href="Pitchvilla Website v4.dc.html" style="padding:18px 0;border-bottom:1px solid rgba(28,20,16,0.14);font-size:24px;font-weight:600;letter-spacing:-0.02em">Home</a>
+          <div style="padding:18px 0 6px;font-size:12px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#6B5E54">About us</div>
+          <a href="About.dc.html" style="padding:10px 0 10px 14px;font-size:18px;font-weight:500">About Pitchvilla</a>
+          <a href="Interview Prep.dc.html" style="padding:10px 0 10px 14px;font-size:18px;font-weight:500">Interview Guide</a>
+          <a href="Pitchvilla Website v4.dc.html#faq" style="padding:10px 0 18px 14px;font-size:18px;font-weight:500;border-bottom:1px solid rgba(28,20,16,0.14)">FAQ</a>
+          <div style="padding:18px 0 6px;font-size:12px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#6B5E54">Services</div>
+          <details style="padding-left:14px"><summary style="list-style:none;cursor:pointer;padding:10px 0;font-size:18px;font-weight:500;display:flex;justify-content:space-between;align-items:center">Launch<svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M3.5 6l4.5 4.5L12.5 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></summary><div style="display:flex;flex-direction:column;padding:0 0 8px 14px"><a href="Idea Validation.dc.html" style="padding:8px 0;font-size:15px;color:#4A3F37">Idea Validation</a><a href="Launch Your Startup.dc.html" style="padding:8px 0;font-size:15px;color:#4A3F37">Launch Your Startup</a><a href="Pitch Deck Creation.dc.html" style="padding:8px 0;font-size:15px;color:#4A3F37">Pitch Deck Creation</a></div></details>
+          <details style="padding-left:14px"><summary style="list-style:none;cursor:pointer;padding:10px 0;font-size:18px;font-weight:500;display:flex;justify-content:space-between;align-items:center">Grow<svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M3.5 6l4.5 4.5L12.5 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></summary><div style="display:flex;flex-direction:column;padding:0 0 8px 14px"><a href="Business Strategy.dc.html" style="padding:8px 0;font-size:15px;color:#4A3F37">Business Strategy</a><a href="Financial Analysis.dc.html" style="padding:8px 0;font-size:15px;color:#4A3F37">Financial Analysis</a><a href="Digital Marketing.dc.html" style="padding:8px 0;font-size:15px;color:#4A3F37">Digital Marketing</a><a href="Hiring and Team Building.dc.html" style="padding:8px 0;font-size:15px;color:#4A3F37">Hiring &amp; Team Building</a></div></details>
+          <details style="padding-left:14px;border-bottom:1px solid rgba(28,20,16,0.14);padding-bottom:8px"><summary style="list-style:none;cursor:pointer;padding:10px 0;font-size:18px;font-weight:500;display:flex;justify-content:space-between;align-items:center">Raise<svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M3.5 6l4.5 4.5L12.5 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></summary><div style="display:flex;flex-direction:column;padding:0 0 8px 14px"><a href="Investor Readiness.dc.html" style="padding:8px 0;font-size:15px;color:#4A3F37">Investor Readiness</a><a href="Pitch to Investors.dc.html" style="padding:8px 0;font-size:15px;color:#4A3F37">Pitch to Investors</a></div></details>
+        </div>
+      </details>
+    </div>
+  </header>
+
+  <section style="border-bottom:1px solid rgba(28,20,16,0.2)">
+    <div data-pad="1" style="max-width:1280px;margin:0 auto;padding:clamp(56px,9vh,104px) clamp(24px,6vw,96px) clamp(56px,8vh,88px)">
+      <div style="display:flex;gap:24px;font-size:12px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;flex-wrap:wrap"><span>Interview guide</span><span style="opacity:0.55">100X Forge · Selection</span></div>
+      <h1 style="margin:20px 0 0;font-size:clamp(30px,3vw,40px);line-height:1.02;font-weight:600;letter-spacing:-0.035em;max-width:980px">
+        <span style="display:block;overflow:hidden;padding-bottom:6px"><span data-line="0" style="display:block">How to prepare for your</span></span>
+        <span style="display:block;overflow:hidden;padding-bottom:6px"><span data-line="1" style="display:block">100X Forge interview.</span></span>
+      </h1>
+      <p style="margin:28px 0 0;font-size:clamp(18px,1.6vw,22px);line-height:1.5;max-width:640px">Your 100X Forge interview is not a pitch competition.</p>
+    </div>
+  </section>
+
+  <div style="max-width:1280px;margin:0 auto;padding:0 clamp(24px,6vw,96px);display:flex;gap:clamp(24px,6vw,96px);align-items:flex-start">
+    <nav data-toc="1" style="flex:0 0 240px;position:sticky;top:96px;padding:88px 0 40px;display:flex;flex-direction:column;gap:0;max-height:calc(100vh - 96px);overflow-y:auto;scrollbar-width:none">
+      <div style="font-size:12px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;margin-bottom:14px;opacity:0.6">Contents</div>
+      <sc-for list="{{ toc }}" as="t" hint-placeholder-count="16"><a href="{{ t.href }}" style="padding:6px 0 6px 14px;border-left:2px solid {{ t.bc }};font-size:13px;line-height:1.35;font-weight:{{ t.fw }};transition:border-color .4s ease" style-hover="border-color:#FFCC00">{{ t.label }}</a></sc-for>
+    </nav>
+
+    <main style="flex:1 1 auto;min-width:0;max-width:720px;padding:88px 0 112px" data-pad="1">
+      <div data-soft="1" style="display:flex;flex-direction:column;gap:14px;font-size:17px;line-height:1.65">
+        <p style="margin:0">No deck, no script, no perfect answers. <strong style="font-weight:600">We want to know you, your business and whether we can help.</strong></p>
+        <p style="margin:0;color:#4A3F37">Expect direct questions.</p>
+      </div>
+
+      <sc-for list="{{ sections }}" as="s" hint-placeholder-count="6">
+        <section id="{{ s.id }}" data-sec="1" style="margin-top:64px;padding-top:36px;border-top:1px solid rgba(28,20,16,0.2)">
+          <div style="font-size:12px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase">{{ s.n }}</div>
+          <h2 style="margin:12px 0 0;font-size:clamp(28px,2.8vw,40px);line-height:1.1;font-weight:600;letter-spacing:-0.015em">{{ s.title }}</h2>
+          <p style="margin:14px 0 0;font-size:17px;line-height:1.6;color:#4A3F37;max-width:600px">{{ s.lede }}</p>
+          <sc-if value="{{ s.isChips }}" hint-placeholder-val="{{ true }}">
+            <div style="margin-top:24px;display:flex;flex-wrap:wrap;gap:8px">
+              <sc-for list="{{ s.items }}" as="it" hint-placeholder-count="6"><span style="border:1px solid rgba(28,20,16,0.35);border-radius:999px;padding:7px 14px;font-size:14px;font-weight:500">{{ it.t }}</span></sc-for>
+            </div>
+          </sc-if>
+          <sc-if value="{{ s.isQs }}" hint-placeholder-val="{{ false }}">
+            <div style="margin-top:24px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:32px;border-top:1px solid rgba(28,20,16,0.2)">
+              <sc-for list="{{ s.items }}" as="it" hint-placeholder-count="4"><div style="display:grid;grid-template-columns:32px minmax(0,1fr);padding:12px 0;border-bottom:1px solid rgba(28,20,16,0.2);align-items:baseline"><span style="font-size:12px;font-weight:600;color:#6B5E54">{{ it.n }}</span><span style="font-size:16px;font-weight:500;line-height:1.4">{{ it.t }}</span></div></sc-for>
+            </div>
+          </sc-if>
+          <sc-if value="{{ s.hasQuote }}" hint-placeholder-val="{{ false }}"><p style="margin:24px 0 0;font-size:clamp(18px,1.8vw,22px);line-height:1.4;font-weight:500;letter-spacing:-0.01em;padding:18px 22px;background:#F3EDE0">“{{ s.quote }}”</p></sc-if>
+          <sc-if value="{{ s.hasTake }}" hint-placeholder-val="{{ false }}"><p style="margin:22px 0 0;font-size:16px;line-height:1.6;font-weight:600">{{ s.take }}</p></sc-if>
+        </section>
+      </sc-for>
+    </main>
+  </div>
+
+  <section id="last" style="background:#FFCC00;position:relative;overflow:hidden">
+    <div data-pad="1" style="max-width:1280px;margin:0 auto;padding:112px clamp(24px,6vw,96px) 112px;position:relative">
+      <div style="font-size:12px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase">One last thing</div>
+      <h2 style="margin:20px 0 0;font-size:clamp(30px,3vw,40px);line-height:1.04;font-weight:600;letter-spacing:-0.025em;max-width:1100px">Bring the real business.<br>We'll take it from there.</h2>
+      <div style="margin-top:56px;display:flex;gap:28px;align-items:center;flex-wrap:wrap">
+        <a href="Apply.dc.html" style="background:#1C1410;color:#FBF8F1;border-radius:8px;padding:18px 28px;font-size:16px;font-weight:600;display:flex;gap:12px;align-items:center" style-hover="color:#FFCC00">Apply</a>
+        <span style="font-size:15px">Talk to customers · Check your numbers · Fix something · Make a decision</span>
+      </div>
+    </div>
+  </section>
+
+  <footer style="background:#FBF8F1">
+    <div style="max-width:1280px;margin:0 auto;padding:32px clamp(24px,6vw,96px);display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px 32px;font-size:13px">
+      <span style="display:flex;align-items:center;gap:8px;font-weight:600"><span style="width:10px;height:10px;border-radius:50%;background:#FFCC00;display:block"></span>© 2026 Pitchvilla Startup School</span>
+      <div style="display:flex;gap:24px;flex-wrap:wrap"><a href="Pitchvilla Website v4.dc.html">100X Forge</a><a href="Apply.dc.html">Apply</a><a href="mailto:connect@pitchvilla.com">connect@pitchvilla.com</a></div>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { active: 'clarity' };
+  componentDidMount() {
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const q = s => Array.from(document.querySelectorAll(s));
+    if (!reduce) {
+      q('[data-line]').forEach((el, i) => { el.style.transform = 'translateY(28px)'; el.style.opacity = '0'; el.style.transition = `transform .9s cubic-bezier(.22,.61,.36,1) ${0.1 + i * 0.1}s, opacity .7s ease ${0.1 + i * 0.1}s`; el.getBoundingClientRect(); });
+      this.heroT = setTimeout(() => q('[data-line]').forEach(el => { el.style.transform = 'none'; el.style.opacity = '1'; }), 40);
+      this.prep = () => {
+        const soft = q('h2, [data-soft]').filter(el => !el.dataset.rv);
+        soft.forEach(el => { el.dataset.rv = '1'; el.style.opacity = '0'; el.style.transform = 'translateY(20px)'; el.style.transition = 'opacity .7s ease, transform .9s cubic-bezier(.22,.61,.36,1)'; });
+        q('[data-stagger]').forEach(p => Array.from(p.children).forEach((c, i) => { if (c.dataset.rv) return; c.dataset.rv = '1'; const d = Math.min(i, 6) * 0.06; c.style.opacity = '0'; c.style.transform = 'translateY(24px)'; c.style.transition = `opacity .6s ease ${d}s, transform .9s cubic-bezier(.22,.61,.36,1) ${d}s`; soft.push(c); }));
+        this.pending = (this.pending || []).concat(soft);
+      };
+      this.prep();
+    }
+    this.check = () => {
+      const vh = window.innerHeight;
+      if (this.pending && this.pending.length) this.pending = this.pending.filter(el => { if (!el.isConnected) return false; const r = el.getBoundingClientRect(); if (r.top < vh * 0.95 && r.bottom > 0) { el.style.opacity = '1'; el.style.transform = 'none'; return false; } return true; });
+      let act = this.state.active;
+      q('[data-sec]').forEach(s => { if (s.getBoundingClientRect().top < vh * 0.35) act = s.id; });
+      if (act !== this.state.active) this.setState({ active: act });
+    };
+    window.addEventListener('scroll', this.check, { passive: true });
+    this.tick = setInterval(this.check, 400);
+    this.late = setTimeout(() => { this.prep && this.prep(); this.check(); }, 150);
+  }
+  componentWillUnmount() { window.removeEventListener('scroll', this.check); clearInterval(this.tick); clearTimeout(this.heroT); clearTimeout(this.late); }
+
+  renderVals() {
+    const pad = n => String(n).padStart(2, '0');
+    const C = (id, title, lede, items, take, quote) => ({ id, title, lede, items, take, quote, isChips: true });
+    const Qs = (id, title, lede, items, take, quote) => ({ id, title, lede, items, take, quote, isQs: true });
+    const data = [
+      Qs('clarity', "Know your business. Don't script it.", 'Explain it in a few plain sentences. No jargon.', ['What do you do?', 'Who do you do it for?', 'How does the business make money?', 'Why does it matter?'], "Short, plain answers are fine.", 'Tell us about your business.'),
+      C('numbers', 'Know your numbers.', "The key numbers, not every entry.", ['Revenue & growth', 'Gross margin', 'Profitability', 'Customer acquisition cost', 'Average customer value', 'Sales conversion', 'Repeat customers', 'Cash flow', 'Liabilities', 'Team & major costs'], 'Expect questions like: which number worries you most?'),
+      Qs('market', 'Know your customers and competitors.', "Who buys from you, and who you're up against.", ['Who is your ideal customer, and why do they buy?', "Why do some customers leave or never buy?", 'What have customers taught you that changed how you operate?', 'Who are your competitors, and where are they weak?', 'Where are you genuinely different?'], "Skip “better quality.” Say why customers pick you."),
+      C('honest', "Be honest about what's not working.", "Every business has problems. We don't expect them solved.", ['Unpredictable sales', 'Weak team', 'Founder does everything', "Marketing isn't converting", 'Low margins', 'Chaotic operations', 'Outdated technology', 'Cash flow pressure'], "If you don't know something, say so. We want to see how you think it through.", "This is our biggest problem. We've tried X and Y. We believe Z is the reason."),
+      Qs('direction', "Know what you need and where you're going.", "Be specific. “I want to grow” isn't enough.", ['Why 100X Forge, and what exactly do you need?', 'Where should the business be in 1, 3 and 5 years?', 'What revenue, team and markets are you targeting?', 'What is the biggest decision you face right now?'], "Big or small, tell us why it matters to you."),
+      C('show', 'Bring the real business, and your co-founders.', "Show what you actually use. Don't build anything new for us.", ['Product', 'Website or app', 'Dashboards', 'Sales process', 'Customer journey', 'Campaigns', 'Financials'], 'Co-founders should attend. Know who owns what and who decides.'),
+      C('yourself', 'Be yourself.', 'You may work with your interviewers. Come as you are.', ['Ambitious', 'Honest', 'Curious', 'Direct', 'Open to challenge']),
+      Qs('checklist', 'Before your interview.', 'Can you answer these?', ['What does your business do?', 'Who is your customer?', 'How does it make money?', 'What is your current revenue?', 'What has changed recently?', 'What is working well?', 'What is currently broken?', 'What is your biggest challenge?', 'Who are your biggest competitors?', 'Why do customers choose you?', "What have you tried that didn't work?", 'Where do you want to be in 3 years?', 'What is stopping you?', 'Why 100X Forge?', 'What should we help you achieve in 6 months?'], "Answer these honestly and you're ready.")
+    ];
+    const sections = data.map((d, i) => ({ isChips: false, isQs: false, ...d, n: pad(i + 1), hasTake: !!d.take, hasQuote: !!d.quote, take: d.take || '', quote: d.quote || '', items: d.items.map((t, j) => ({ t, n: pad(j + 1) })) }));
+    const toc = [...data.map(({ id, title }) => ({ href: '#' + id, label: title.replace(/\.$/, ''), bc: this.state.active === id ? '#1C1410' : 'rgba(28,20,16,0.15)', fw: this.state.active === id ? 600 : 400 })), { href: '#last', label: 'One last thing', bc: 'rgba(28,20,16,0.15)', fw: 400 }];
+    const doList = ['Talk to your customers', 'Look at your numbers', 'Fix something', 'Launch something', 'Make a decision', 'Solve a problem', 'Move the business forward'];
+    return { sections, toc, doList };
+  }
+}
+</script>
+</body>
+</html>

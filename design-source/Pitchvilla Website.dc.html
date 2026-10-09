@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="./image-slot.js"></script>
+<style>body{margin:0;background:#fff;color:#1C1410;font-family:'Poppins',sans-serif}a{color:#1C1410;text-decoration:none}a:hover{color:#1C1410;text-decoration:underline}*{box-sizing:border-box}</style>
+</helmet>
+<div style="font-family:'Poppins',sans-serif;color:#1C1410;background:#fff">
+
+  <header style="position:sticky;top:0;z-index:10;background:#fff;border-bottom:2px solid #1C1410">
+    <div style="max-width:1280px;margin:0 auto;padding:16px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap">
+      <span style="font-size:20px;font-weight:700;letter-spacing:-0.01em;display:flex;align-items:center;gap:8px"><span style="width:12px;height:12px;border-radius:999px;background:#FFCC00;display:block"></span>pitchvilla</span>
+      <nav style="display:flex;gap:28px;font-size:15px;font-weight:500;flex-wrap:wrap">
+        <a href="#programs">Programs</a><a href="#areas">Focus Areas</a><a href="#stories">Founder Stories</a><a href="#why">Why Now</a><a href="#press">Press</a>
+      </nav>
+      <a href="#apply" style="background:#FFCC00;border-radius:999px;padding:10px 22px;font-size:15px;font-weight:600">Apply for Aarambh</a>
+    </div>
+  </header>
+
+  <section style="background:#FFCC00;border-bottom:2px solid #1C1410">
+    <div style="max-width:1280px;margin:0 auto;padding:24px 32px;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px">
+      <sc-for list="{{ cohorts }}" as="c" hint-placeholder-count="3">
+        <a href="#apply" style="background:#fff;border-radius:20px;overflow:hidden;display:grid;grid-template-columns:120px minmax(0,1fr);min-height:150px">
+          <image-slot id="{{ c.slot }}" shape="rect" placeholder="Venue photo" style="width:120px;height:100%;display:block"></image-slot>
+          <div style="padding:16px 18px;display:flex;flex-direction:column;gap:4px">
+            <span style="font-size:12px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase">{{ c.tag }}</span>
+            <span style="font-size:19px;font-weight:700;line-height:1.2">{{ c.title }}</span>
+            <span style="font-size:14px;line-height:1.4">{{ c.desc }}</span>
+            <span style="margin-top:auto;font-size:13px;font-weight:600">{{ c.meta }} →</span>
+          </div>
+        </a>
+      </sc-for>
+    </div>
+  </section>
+
+  <section style="max-width:1280px;margin:0 auto;padding:88px 32px 64px">
+    <span style="font-size:14px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase">India's founder-first startup school</span>
+    <h1 style="margin:16px 0 0;font-size:clamp(44px,7vw,96px);line-height:1;font-weight:700;text-transform:uppercase;letter-spacing:-0.01em;max-width:1100px;text-wrap:balance">Your business, rebuilt in six months.</h1>
+    <p style="margin:24px 0 0;font-size:20px;line-height:1.5;max-width:640px;text-wrap:pretty">Strategy, systems, marketing and a founder network, executed alongside you from the Pitchvilla Startup Office or hybrid.</p>
+    <div style="margin-top:32px;display:flex;gap:12px;flex-wrap:wrap">
+      <a href="#programs" style="background:#FFCC00;border-radius:999px;padding:14px 28px;font-size:16px;font-weight:600">Explore Programs</a>
+      <a href="#apply" style="border:2px solid #1C1410;border-radius:999px;padding:12px 26px;font-size:16px;font-weight:600">Talk to our team</a>
+    </div>
+    <div style="margin-top:72px;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:32px">
+      <div style="border-top:2px solid #1C1410;padding-top:18px;display:flex;flex-direction:column;gap:6px"><span style="font-size:56px;font-weight:700;line-height:1">30</span><span style="font-size:16px">Founders selected per Aarambh cohort</span></div>
+      <div style="border-top:2px solid #1C1410;padding-top:18px;display:flex;flex-direction:column;gap:6px"><span style="font-size:56px;font-weight:700;line-height:1">50+</span><span style="font-size:16px">Experts, CXOs and domain specialists</span></div>
+      <div style="border-top:2px solid #1C1410;padding-top:18px;display:flex;flex-direction:column;gap:6px"><span style="font-size:56px;font-weight:700;line-height:1">6</span><span style="font-size:16px">Months from diagnosis to growth roadmap</span></div>
+    </div>
+  </section>
+
+  <section style="border-top:2px solid #1C1410;border-bottom:2px solid #1C1410;overflow:hidden">
+    <div style="max-width:1280px;margin:0 auto;padding:28px 32px;display:flex;align-items:center;gap:32px;flex-wrap:wrap">
+      <span style="font-size:13px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;min-width:160px">Our mentors have led teams at</span>
+      <div style="flex:1;display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:16px">
+        <sc-for list="{{ logos }}" as="l" hint-placeholder-count="8">
+          <div style="height:44px;border-radius:8px;background:#F4F1EC;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:500">Logo</div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <section id="programs" style="max-width:1280px;margin:0 auto;padding:96px 32px">
+    <div style="display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap">
+      <h2 style="margin:0;flex:1 1 420px;min-width:0;font-size:clamp(34px,4.5vw,56px);line-height:1.05;font-weight:700;text-transform:uppercase">Popular programs</h2>
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <sc-for list="{{ filters }}" as="f" hint-placeholder-count="3">
+          <button onClick="{{ f.onClick }}" style="font-family:'Poppins',sans-serif;font-size:14px;font-weight:600;border-radius:999px;padding:8px 18px;cursor:pointer;border:2px solid #1C1410;background:{{ f.bg }};color:#1C1410">{{ f.label }}</button>
+        </sc-for>
+      </div>
+    </div>
+    <div style="margin-top:40px;display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:24px">
+      <sc-for list="{{ programs }}" as="p" hint-placeholder-count="6">
+        <a href="#apply" style="border:2px solid #1C1410;border-radius:20px;padding:24px;display:flex;flex-direction:column;gap:12px;min-height:260px" style-hover="background:#FFF6CC;text-decoration:none">
+          <span style="align-self:flex-start;background:#FFCC00;border-radius:6px;padding:2px 10px;font-size:12px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">{{ p.stage }}</span>
+          <span style="font-size:24px;font-weight:700;line-height:1.2">{{ p.title }}</span>
+          <span style="font-size:15px;line-height:1.5">{{ p.desc }}</span>
+          <div style="margin-top:auto;border-top:1px solid #1C1410;padding-top:12px;display:flex;justify-content:space-between;font-size:14px;font-weight:600;gap:12px"><span>{{ p.duration }}</span><span>{{ p.mode }}</span></div>
+          <span style="font-size:13px">Next cohort: {{ p.start }}</span>
+        </a>
+      </sc-for>
+    </div>
+  </section>
+
+  <section id="areas" style="background:#FFCC00;border-top:2px solid #1C1410;border-bottom:2px solid #1C1410">
+    <div style="max-width:1280px;margin:0 auto;padding:96px 32px">
+      <span style="font-size:14px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase">Choose where you're stuck</span>
+      <h2 style="margin:12px 0 0;font-size:clamp(34px,4.5vw,56px);line-height:1.05;font-weight:700;text-transform:uppercase">Find the right track for your business</h2>
+      <div style="margin-top:40px;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));column-gap:40px;border-bottom:2px solid #1C1410">
+        <sc-for list="{{ areas }}" as="a" hint-placeholder-count="9">
+          <a href="#programs" style="border-top:2px solid #1C1410;padding:18px 0;display:flex;justify-content:space-between;align-items:baseline;gap:12px"><span style="font-size:19px;font-weight:600">{{ a.name }}</span><span style="font-size:14px;font-weight:500;white-space:nowrap">{{ a.count }} →</span></a>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <section style="max-width:1280px;margin:0 auto;padding:96px 32px">
+    <h2 style="margin:0;font-size:clamp(34px,4.5vw,56px);line-height:1.05;font-weight:700;text-transform:uppercase">What's inside the villa</h2>
+    <p style="margin:16px 0 0;font-size:18px;line-height:1.5;max-width:620px">Everything a founder needs to build, under one roof.</p>
+    <div style="margin-top:40px;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:32px">
+      <sc-for list="{{ inside }}" as="i" hint-placeholder-count="4">
+        <div style="display:flex;flex-direction:column;gap:12px">
+          <image-slot id="{{ i.slot }}" shape="rounded" radius="16" placeholder="{{ i.name }} photo" style="width:100%;height:200px;display:block"></image-slot>
+          <div style="border-top:2px solid #1C1410;padding-top:12px"><span style="font-size:18px;font-weight:700">{{ i.name }}</span><p style="margin:4px 0 0;font-size:14px;line-height:1.5">{{ i.desc }}</p></div>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <section style="border-top:2px solid #1C1410">
+    <div style="max-width:1280px;margin:0 auto;padding:96px 32px">
+      <h2 style="margin:0;font-size:clamp(34px,4.5vw,56px);line-height:1.05;font-weight:700;text-transform:uppercase">Be part of the founder community</h2>
+      <div style="margin-top:40px;display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));grid-auto-rows:180px;gap:16px">
+        <image-slot id="community-1" shape="rounded" radius="16" placeholder="Community photo" style="width:100%;height:100%;display:block;grid-column:span 2;grid-row:span 2"></image-slot>
+        <image-slot id="community-2" shape="rounded" radius="16" placeholder="Community photo" style="width:100%;height:100%;display:block"></image-slot>
+        <image-slot id="community-3" shape="rounded" radius="16" placeholder="Community photo" style="width:100%;height:100%;display:block"></image-slot>
+        <image-slot id="community-4" shape="rounded" radius="16" placeholder="Community photo" style="width:100%;height:100%;display:block"></image-slot>
+        <image-slot id="community-5" shape="rounded" radius="16" placeholder="Community photo" style="width:100%;height:100%;display:block"></image-slot>
+        <image-slot id="community-6" shape="rounded" radius="16" placeholder="Community photo" style="width:100%;height:100%;display:block;grid-column:span 2"></image-slot>
+      </div>
+    </div>
+  </section>
+
+  <section id="stories" style="background:#FFCC00;border-top:2px solid #1C1410;border-bottom:2px solid #1C1410">
+    <div style="max-width:1280px;margin:0 auto;padding:96px 32px">
+      <span style="font-size:14px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase">Your business. Our mission.</span>
+      <h2 style="margin:12px 0 0;font-size:clamp(34px,4.5vw,56px);line-height:1.05;font-weight:700;text-transform:uppercase">Founder stories</h2>
+      <div style="margin-top:40px;background:#fff;border-radius:24px;overflow:hidden;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
+        <image-slot id="{{ story.slot }}" shape="rect" placeholder="Founder photo" style="width:100%;height:100%;min-height:380px;display:block"></image-slot>
+        <div style="padding:40px;display:flex;flex-direction:column;gap:16px">
+          <span style="font-size:13px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase">{{ story.business }}</span>
+          <p style="margin:0;font-size:20px;line-height:1.55;text-wrap:pretty">“{{ story.quote }}”</p>
+          <div style="margin-top:auto;border-top:2px solid #1C1410;padding-top:16px;display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap">
+            <div><div style="font-size:20px;font-weight:700">{{ story.name }}</div><div style="font-size:15px">{{ story.shift }}</div></div>
+            <div style="display:flex;gap:8px;align-items:center">
+              <span style="font-size:14px;font-weight:600;margin-right:8px">{{ storyPos }}</span>
+              <button onClick="{{ prev }}" style="width:44px;height:44px;border-radius:999px;border:2px solid #1C1410;background:#fff;font-size:18px;cursor:pointer;font-family:'Poppins',sans-serif">←</button>
+              <button onClick="{{ next }}" style="width:44px;height:44px;border-radius:999px;border:2px solid #1C1410;background:#FFCC00;font-size:18px;cursor:pointer;font-family:'Poppins',sans-serif">→</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="why" style="max-width:1280px;margin:0 auto;padding:96px 32px">
+    <h2 style="margin:0;font-size:clamp(34px,4.5vw,56px);line-height:1.05;font-weight:700;text-transform:uppercase">Why founders stall, and why now</h2>
+    <p style="margin:16px 0 0;font-size:18px;line-height:1.5;max-width:640px">Most small businesses don't fail for lack of effort. They stall because the founder is running everything alone.</p>
+    <div style="margin-top:48px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:40px">
+      <sc-for list="{{ why }}" as="w" hint-placeholder-count="3">
+        <div style="border-top:2px solid #1C1410;padding-top:20px;display:flex;flex-direction:column;gap:12px">
+          <span style="font-size:48px;font-weight:700;line-height:1">{{ w.n }}</span>
+          <span style="font-size:22px;font-weight:700;line-height:1.25">{{ w.title }}</span>
+          <span style="font-size:15px;line-height:1.55">{{ w.desc }}</span>
+          <span style="align-self:flex-start;background:#FFCC00;border-radius:6px;padding:2px 10px;font-size:13px;font-weight:600">{{ w.fix }}</span>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <section id="press" style="border-top:2px solid #1C1410">
+    <div style="max-width:1280px;margin:0 auto;padding:96px 32px;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:48px;align-items:start">
+      <div style="display:flex;flex-direction:column;gap:20px">
+        <h2 style="margin:0;font-size:clamp(34px,4.5vw,56px);line-height:1.05;font-weight:700;text-transform:uppercase">Pitchvilla in the spotlight</h2>
+        <image-slot id="press-video" shape="rounded" radius="20" placeholder="Pitchvilla story video" style="width:100%;height:300px;display:block"></image-slot>
+      </div>
+      <div style="display:flex;flex-direction:column;border-bottom:2px solid #1C1410">
+        <sc-for list="{{ press }}" as="pr" hint-placeholder-count="3">
+          <a href="#press" style="border-top:2px solid #1C1410;padding:22px 0;display:flex;flex-direction:column;gap:6px"><span style="font-size:13px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase">{{ pr.outlet }}</span><span style="font-size:20px;font-weight:600;line-height:1.35">{{ pr.head }}</span></a>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <section id="apply" style="background:#FFCC00;border-top:2px solid #1C1410">
+    <div style="max-width:1280px;margin:0 auto;padding:96px 32px;display:flex;justify-content:space-between;align-items:end;gap:32px;flex-wrap:wrap">
+      <div><span style="font-size:14px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase">Aarambh · Cohort 01</span><h2 style="margin:12px 0 0;font-size:clamp(38px,5.5vw,72px);line-height:1;font-weight:700;text-transform:uppercase;max-width:800px">30 founders. Six months. Apply now.</h2></div>
+      <a href="#apply" style="background:#fff;border:2px solid #1C1410;border-radius:999px;padding:16px 32px;font-size:17px;font-weight:600">Start your application →</a>
+    </div>
+    <div style="max-width:1280px;margin:0 auto;padding:48px 32px 40px;border-top:2px solid #1C1410;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:32px">
+      <div style="display:flex;flex-direction:column;gap:10px"><span style="font-size:20px;font-weight:700">PITCHVILLA</span><span style="font-size:14px;line-height:1.5">Pitchvilla Startup Office<br>City, India</span></div>
+      <div style="display:flex;flex-direction:column;gap:8px;font-size:14px"><span style="font-weight:700;letter-spacing:0.1em;font-size:12px">PITCHVILLA</span><a href="#">About Us</a><a href="#">Our Team</a><a href="#">Experts &amp; CXOs</a><a href="#">Careers</a><a href="#">Contact Us</a></div>
+      <div style="display:flex;flex-direction:column;gap:8px;font-size:14px"><span style="font-weight:700;letter-spacing:0.1em;font-size:12px">COMMUNITY</span><a href="#stories">Founder Stories</a><a href="#">Become a Mentor</a><a href="#">Book the Studio</a><a href="#">Workspace</a></div>
+      <div style="display:flex;flex-direction:column;gap:8px;font-size:14px"><span style="font-weight:700;letter-spacing:0.1em;font-size:12px">RESOURCES</span><a href="#">Blog</a><a href="#">White Paper</a><a href="#">Privacy Policy</a><a href="#">Terms &amp; Conditions</a></div>
+      <div style="display:flex;flex-direction:column;gap:8px;font-size:14px"><span style="font-weight:700;letter-spacing:0.1em;font-size:12px">FOLLOW US</span><a href="#">Instagram</a><a href="#">LinkedIn</a><a href="#">YouTube</a><a href="#">X</a></div>
+    </div>
+    <div style="max-width:1280px;margin:0 auto;padding:16px 32px 32px;font-size:13px">© 2026 Pitchvilla Startup School</div>
+  </section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { filter: 'All', story: 0 };
+  renderVals() {
+    const cohorts = [
+      { slot:'cohort-1', tag:'Aarambh — Founders Cohort', title:'6-Month Business Transformation', desc:'For founders with an idea or an existing business ready to be rebuilt.', meta:'30 seats · Startup Office or Hybrid' },
+      { slot:'cohort-2', tag:'Pitch Ready', title:'Investor-Readiness Sprint', desc:'Deck, financials and narrative, ending with a pitch to investors.', meta:'8 weeks · Hybrid' },
+      { slot:'cohort-3', tag:'Studio Residency', title:'Founder-Led Content', desc:'Build your founder brand with our studio, podcast and content team.', meta:'6 weeks · In studio' }
+    ];
+    const all = [
+      { stage:'Idea / Existing', cat:'Founders', title:'Aarambh: 6-Month Founder Program', desc:'Diagnose, build the foundation, validate, build the engine, systemize and scale.', duration:'6 months', mode:'Office / Hybrid', start:'Cohort 01' },
+      { stage:'Early revenue', cat:'Founders', title:'Pitch Ready: Investor Sprint', desc:'Business plan, unit economics, deck and investor conversations.', duration:'8 weeks', mode:'Hybrid', start:'Next month' },
+      { stage:'Growing', cat:'Growth', title:'Build the Engine: CRM & Sales', desc:'Cloud CRM, lead management, automation and a working sales process.', duration:'10 weeks', mode:'Hybrid', start:'Rolling' },
+      { stage:'Growing', cat:'Growth', title:'Performance Marketing Lab', desc:'Meta Ads execution, 5 reels a month and performance tracking.', duration:'12 weeks', mode:'Online', start:'Rolling' },
+      { stage:'Scaling', cat:'Operations', title:'Systemize & Delegate', desc:'SOPs, hiring, team structure and the founder role transition.', duration:'8 weeks', mode:'Office', start:'Quarterly' },
+      { stage:'Aspiring', cat:'Careers', title:"Founder's Office Fellowship", desc:'Work inside cohort businesses alongside founders and the strategy team.', duration:'6 months', mode:'Office', start:'Quarterly' }
+    ];
+    const cats = ['All','Founders','Growth','Operations','Careers'];
+    const filters = cats.map(c => ({ label:c, bg: c===this.state.filter ? '#FFCC00' : '#fff', onClick: () => this.setState({ filter:c }) }));
+    const programs = this.state.filter==='All' ? all : all.filter(p => p.cat===this.state.filter);
+    const areas = [['Business Strategy & Restructuring','6 tracks'],['Positioning & Pricing','4 tracks'],['Marketing & Content','7 tracks'],['Technology & CRM','5 tracks'],['Sales & Go-to-Market','5 tracks'],['Operations & SOPs','4 tracks'],['Hiring & Team Building','3 tracks'],['Finance & Unit Economics','4 tracks'],['Fundraising & Investor Readiness','3 tracks']].map(([name,count])=>({name,count}));
+    const inside = [
+      { slot:'inside-1', name:'Workspace', desc:'Desks and meeting rooms at the Pitchvilla Startup Office.' },
+      { slot:'inside-2', name:'Studio & Podcast', desc:'Shoot reels and record podcasts with our content team.' },
+      { slot:'inside-3', name:'Expert Sessions', desc:'Three days a week with 50+ experts, CXOs and founders.' },
+      { slot:'inside-4', name:'Founder Network', desc:'A cohort of 30 founders solving the same problems.' }
+    ];
+    const stories = [
+      { slot:'story-1', name:'Founder Name', business:'D2C Food Brand', shift:'Solo operator to a team of 8', quote:'I was doing sales, accounts and deliveries myself. Six months later we have SOPs, a CRM and a team that runs the day without me.' },
+      { slot:'story-2', name:'Founder Name', business:'Interior Design Studio', shift:'Referral-only to a steady inbound pipeline', quote:'We finally priced our work properly and built a website and ad funnel that brings in leads every week.' },
+      { slot:'story-3', name:'Founder Name', business:'SaaS Startup', shift:'Idea stage to investor conversations', quote:'The business plan, financials and deck came together with people who had raised before. Demo Day was the first time I felt ready.' }
+    ];
+    const s = this.state.story;
+    const why = [
+      { n:'01', title:'The founder is the bottleneck', desc:'Every decision, sale and fix runs through one person, so growth stops when the founder does.', fix:'Fixed in Months 04–05' },
+      { n:'02', title:'No clear plan or pricing', desc:'Without a documented business model, pricing and priorities change week to week.', fix:'Fixed in Months 01–02' },
+      { n:'03', title:'Weak digital presence', desc:'Customers look online first. No website, CRM or content means lost leads.', fix:'Fixed in Months 03–04' }
+    ];
+    const press = [
+      { outlet:'Publication', head:'Pitchvilla launches Aarambh, a six-month program for 30 founders' },
+      { outlet:'Publication', head:'Inside the startup office where founders build with CXOs and experts' },
+      { outlet:'Publication', head:'Why small business founders need systems, not just funding' }
+    ];
+    return {
+      cohorts, filters, programs, areas, inside, why, press,
+      logos: Array.from({length:8},(_,i)=>i),
+      story: stories[s], storyPos: `${s+1} / ${stories.length}`,
+      prev: () => this.setState({ story:(s+stories.length-1)%stories.length }),
+      next: () => this.setState({ story:(s+1)%stories.length })
+    };
+  }
+}
+</script>
+</body>
+</html>

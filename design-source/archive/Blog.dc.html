@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<template id="__bundler_thumbnail" data-bg-color="#FBF8F1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#FBF8F1"/><circle cx="50" cy="50" r="20" fill="#FFCC00"/></svg></template>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="./image-slot.js"></script>
+<script src="./motion.js"></script>
+<style>[data-nav="mob"]{display:none}summary::-webkit-details-marker{display:none}summary::marker{content:""}[data-nav="mob"][open] [data-bar="1"]{transform:translateY(7px) rotate(45deg)}[data-nav="mob"][open] [data-bar="2"]{opacity:0}[data-nav="mob"][open] [data-bar="3"]{transform:translateY(-7px) rotate(-45deg)}@media (max-width:900px){[data-mt]{padding-top:44px !important}[data-mb]{padding-bottom:44px !important}[data-statrow]{grid-template-columns:repeat(4,minmax(0,1fr)) !important;padding:0 12px !important}[data-statrow]>div{padding:22px 8px 20px !important;gap:6px !important}[data-statrow]>div>span:first-child{font-size:26px !important}[data-statrow]>div>span:last-child{font-size:10px !important;line-height:1.3 !important}[data-m2]{grid-template-columns:1fr 1fr !important;gap:24px 16px !important}[data-m2]>div{padding-top:14px !important;gap:6px !important}[data-m2]>div>div{font-size:16px !important}[data-m2]>div>div:last-child{font-size:13px !important}[data-rows]>div{grid-template-columns:56px minmax(0,1fr) !important;gap:12px !important;padding:16px 0 !important}[data-rows]>div div,[data-rows]>div span:last-child{font-size:15px !important}[data-filters]{flex-wrap:nowrap !important;overflow-x:auto;scrollbar-width:none;gap:20px !important;margin-right:-24px;padding-right:24px;white-space:nowrap}[data-mh]{margin-bottom:28px !important}[data-cta]{padding-top:56px !important;padding-bottom:56px !important}[data-foot]{grid-template-columns:1fr 1fr !important;gap:24px 16px !important;padding-top:40px !important;padding-bottom:20px !important}[data-foot]>div:first-child{grid-column:1/-1}[data-foot]>div{gap:6px !important;font-size:13px !important}[data-foot] a{font-size:13px}[data-nav="desk"]{display:none !important}[data-nav="mob"]{display:block !important}[data-sticky]{position:static !important}[data-post-row]{grid-template-columns:1fr !important;gap:12px !important;margin:0 !important;padding:24px 0 !important}[data-post-row]>:last-child{order:-1}}body{margin:0;background:#FBF8F1;color:#1C1410;font-family:'Poppins',sans-serif;-webkit-font-smoothing:antialiased}a{color:#1C1410;text-decoration:none}a:hover{color:#1C1410}*{box-sizing:border-box}html{scroll-behavior:smooth}h1,h2,h3,legend{text-wrap:pretty}p,li,div,span,a,label{text-wrap:pretty}@media (min-width:601px) and (max-width:900px){[data-post-row]{grid-template-columns:120px minmax(0,1fr) 200px !important;gap:24px !important;padding:24px 0 !important}[data-post-row]>:last-child{order:0 !important}[data-ptiles]{grid-template-columns:repeat(3,1fr) !important}[data-ptiles]>div{padding:20px 18px 22px !important}[data-ptiles]>div>div:nth-child(2){font-size:16px !important}[data-ptiles]>div>div:last-child{font-size:13px !important}[data-auto]{display:grid !important;grid-template-columns:repeat(3,1fr) !important;overflow:visible !important;margin-right:0 !important;padding-right:0 !important;gap:32px 20px !important}[data-auto]>div{max-width:none !important}[data-statrow]>div>span:first-child{font-size:40px !important}[data-statrow]>div>span:last-child{font-size:13px !important}[data-inc]>div>span:last-child{font-size:15px !important}[data-m2]>div>div{font-size:18px !important}[data-m2]>div>div:last-child{font-size:14px !important}[data-mt]{padding-top:56px !important}[data-mb]{padding-bottom:56px !important}}[data-dd]:hover>[data-dd-menu],[data-dd]:focus-within>[data-dd-menu]{opacity:1 !important;visibility:visible !important;transform:none !important}[data-dd]:hover>button svg,[data-dd]:focus-within>button svg{transform:rotate(180deg)}details[data-nav] summary::-webkit-details-marker{display:none}details[data-nav][open] [data-bar="1"]{transform:translateY(7px) rotate(45deg)}details[data-nav][open] [data-bar="2"]{opacity:0}details[data-nav][open] [data-bar="3"]{transform:translateY(-7px) rotate(-45deg)}@media (max-width:900px){[data-nav="desk"]{display:none !important}[data-nav="mob"]{display:block !important}}[data-sub]:hover>[data-sub-menu],[data-sub]:focus-within>[data-sub-menu]{opacity:1 !important;visibility:visible !important;transform:none !important}[data-sub]:hover>a,[data-sub]:focus-within>a{background:#F3EDE0}@media (max-width:860px){[data-m2]{grid-template-columns:1fr 1fr !important}[data-auto]{grid-template-columns:1fr 1fr !important}}</style>
+</helmet>
+<div style="font-family:'Poppins',sans-serif;color:#1C1410;background:#FBF8F1;overflow-x:clip;min-height:100vh">
+
+  <header style="position:sticky;top:0;z-index:30;background:#FBF8F1;border-bottom:1px solid rgba(28,20,16,0.2)">
+    <div style="max-width:1280px;margin:0 auto;padding:0 clamp(24px,6vw,96px);height:64px;display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:24px">
+      <a href="Pitchvilla Website v4.dc.html" style="display:flex;align-items:center;gap:10px"><span style="font-size:19px;font-weight:600;letter-spacing:-0.02em;display:flex;align-items:center;gap:8px"><span style="width:12px;height:12px;border-radius:50%;background:#FFCC00;display:block"></span>pitchvilla</span><span style="white-space:nowrap;font-size:12px;font-weight:500;color:#6B5E54;border-left:1px solid rgba(28,20,16,0.25);padding-left:10px">100X Forge</span></a>
+      <nav data-nav="desk" style="display:flex;gap:40px;font-size:15px;font-weight:500;align-items:center">
+        <div data-dd="1" style="position:relative">
+          <button type="button" style="all:unset;cursor:pointer;display:flex;align-items:center;gap:6px;font-size:15px;font-weight:500;background:linear-gradient(#FFCC00,#FFCC00) no-repeat 0 100% / 0% 3px;transition:background-size .7s cubic-bezier(.22,.61,.36,1);padding:4px 0" style-hover="background-size:100% 3px">About <svg width="10" height="10" viewBox="0 0 16 16" fill="none" style="transition:transform .3s ease"><path d="M3.5 6l4.5 4.5L12.5 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+          <div data-dd-menu="1" style="position:absolute;top:100%;left:-16px;padding-top:12px;opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .2s ease,transform .25s ease,visibility .2s;z-index:40">
+            <div style="min-width:200px;background:#FBF8F1;border:1px solid rgba(28,20,16,0.14);border-radius:10px;padding:6px;display:flex;flex-direction:column;box-shadow:0 12px 32px -16px rgba(28,20,16,0.3)">
+              <a href="About.dc.html" style="padding:9px 12px;border-radius:6px;font-size:14px;font-weight:500;white-space:nowrap" style-hover="background:#F3EDE0">About Pitchvilla</a>
+              <a href="Apply.dc.html" style="padding:9px 12px;border-radius:6px;font-size:14px;font-weight:500;white-space:nowrap" style-hover="background:#F3EDE0">Apply</a>
+              <a href="Interview Prep.dc.html" style="padding:9px 12px;border-radius:6px;font-size:14px;font-weight:500;white-space:nowrap" style-hover="background:#F3EDE0">Interview Guide</a>
+              <a href="Pitchvilla Website v4.dc.html#faq" style="padding:9px 12px;border-radius:6px;font-size:14px;font-weight:500;white-space:nowrap" style-hover="background:#F3EDE0">FAQ</a>
+            </div>
+          </div>
+        </div>
+        <a href="Pitchvilla Website v4.dc.html" style="background:linear-gradient(#FFCC00,#FFCC00) no-repeat 0 100% / 0% 3px;transition:background-size .7s cubic-bezier(.22,.61,.36,1);padding:4px 0" style-hover="background-size:100% 3px">Home</a>
+        <div data-dd="1" style="position:relative">
+          <button type="button" style="all:unset;cursor:pointer;display:flex;align-items:center;gap:6px;font-size:15px;font-weight:500;background:linear-gradient(#FFCC00,#FFCC00) no-repeat 0 100% / 0% 3px;transition:background-size .7s cubic-bezier(.22,.61,.36,1);padding:4px 0" style-hover="background-size:100% 3px">Services <svg width="10" height="10" viewBox="0 0 16 16" fill="none" style="transition:transform .3s ease"><path d="M3.5 6l4.5 4.5L12.5 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+          <div data-dd-menu="1" style="position:absolute;top:100%;left:-16px;padding-top:12px;opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .2s ease,transform .25s ease,visibility .2s;z-index:40">
+            <div style="min-width:180px;background:#FBF8F1;border:1px solid rgba(28,20,16,0.14);border-radius:10px;padding:6px;display:flex;flex-direction:column;box-shadow:0 12px 32px -16px rgba(28,20,16,0.3)">
+              <div data-sub="1" style="position:relative">
+                <a href="Apply.dc.html?type=enquire&amp;topic=Launch" style="padding:9px 12px;border-radius:6px;font-size:14px;font-weight:500;white-space:nowrap;display:flex;align-items:center;justify-content:space-between;gap:24px">Launch<svg width="10" height="10" viewBox="0 0 16 16" fill="none"><path d="M6 3.5l4.5 4.5L6 12.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+                <div data-sub-menu="1" style="position:absolute;top:-6px;left:100%;padding-left:8px;opacity:0;visibility:hidden;transform:translateX(-4px);transition:opacity .2s ease,transform .2s ease,visibility .2s;z-index:41">
+                  <div style="min-width:220px;background:#FBF8F1;border:1px solid rgba(28,20,16,0.14);border-radius:10px;padding:6px;display:flex;flex-direction:column;box-shadow:0 12px 32px -16px rgba(28,20,16,0.3)">
+                    <a href="Idea Validation.dc.html" style="padding:9px 12px;border-radius:6px;font-size:14px;font-weight:500;white-space:nowrap" style-hover="background:#F3EDE0">Idea Validation</a>
+                    <a href="Launch Your Startup.dc.html" style="padding:9px 12px;border-radius:6px;font-size:14px;font-weight:500;white-space:nowrap" style-hover="background:#F3EDE0">Launch Your Startup</a>
+                    <a href="Pitch Deck Creation.dc.html" style="padding:9px 12px;border-radius:6px;font-size:14px;font-weight:500;white-space:nowrap" style-hover="background:#F3EDE0">Pitch Deck Creation</a>
+                  </div>
+                </div>
+              </div>
+              <div data-sub="1" style="position:relative">
+                <a href="Apply.dc.html?type=enquire&amp;topic=Grow" style="padding:9px 12px;border-radius:6px;font-size:14px;font-weight:500;white-space:nowrap;display:flex;align-items:center;justify-content:space-between;gap:24px">Grow<svg width="10" height="10" viewBox="0 0 16 16" fill="none"><path d="M6 3.5l4.5 4.5L6 12.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+                <div data-sub-menu="1" style="position:absolute;top:-6px;left:100%;padding-left:8px;opacity:0;visibility:hidden;transform:translateX(-4px);transition:opacity .2s ease,transform .2s ease,visibility .2s;z-index:41">
+                  <div style="min-width:220px;background:#FBF8F1;border:1px solid rgba(28,20,16,0.14);border-radius:10px;padding:6px;display:flex;flex-direction:column;box-shadow:0 12px 32px -16px rgba(28,20,16,0.3)">
+                    <a href="Business Strategy.dc.html" style="padding:9px 12px;border-radius:6px;font-size:14px;font-weight:500;white-space:nowrap" style-hover="background:#F3EDE0">Business Strategy</a>
+                    <a href="Financial Analysis.dc.html" style="padding:9px 12px;border-radius:6px;font-size:14px;font-weight:500;white-space:nowrap" style-hover="background:#F3EDE0">Financial Analysis</a>
+                    <a href="Digital Marketing.dc.html" style="padding:9px 12px;border-radius:6px;font-size:14px;font-weight:500;white-space:nowrap" style-hover="background:#F3EDE0">Digital Marketing</a>
+                    <a href="Hiring and Team Building.dc.html" style="padding:9px 12px;border-radius:6px;font-size:14px;font-weight:500;white-space:nowrap" style-hover="background:#F3EDE0">Hiring &amp; Team Building</a>
+                  </div>
+                </div>
+              </div>
+              <div data-sub="1" style="position:relative">
+                <a href="Apply.dc.html?type=enquire&amp;topic=Raise" style="padding:9px 12px;border-radius:6px;font-size:14px;font-weight:500;white-space:nowrap;display:flex;align-items:center;justify-content:space-between;gap:24px">Raise<svg width="10" height="10" viewBox="0 0 16 16" fill="none"><path d="M6 3.5l4.5 4.5L6 12.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+                <div data-sub-menu="1" style="position:absolute;top:-6px;left:100%;padding-left:8px;opacity:0;visibility:hidden;transform:translateX(-4px);transition:opacity .2s ease,transform .2s ease,visibility .2s;z-index:41">
+                  <div style="min-width:220px;background:#FBF8F1;border:1px solid rgba(28,20,16,0.14);border-radius:10px;padding:6px;display:flex;flex-direction:column;box-shadow:0 12px 32px -16px rgba(28,20,16,0.3)">
+                    <a href="Investor Readiness.dc.html" style="padding:9px 12px;border-radius:6px;font-size:14px;font-weight:500;white-space:nowrap" style-hover="background:#F3EDE0">Investor Readiness</a>
+                    <a href="Pitch to Investors.dc.html" style="padding:9px 12px;border-radius:6px;font-size:14px;font-weight:500;white-space:nowrap" style-hover="background:#F3EDE0">Pitch to Investors</a>
+                  </div>
+                </div>
+              </div>
+              
+              </div>
+          </div>
+        </div>
+        <a href="Blog.dc.html" style="background:linear-gradient(#FFCC00,#FFCC00) no-repeat 0 100% / 100% 3px;padding:4px 0">Blog</a>
+      </nav>
+      <a data-nav="desk" href="Apply.dc.html?type=apply" style="justify-self:end;background:#FFCC00;border-radius:8px;padding:10px 18px;font-size:14px;font-weight:600" style-hover="background:#F2BF00">Apply</a>
+      <details data-nav="mob" style="position:relative;display:none;grid-column:3;justify-self:end">
+        <summary aria-label="Menu" style="list-style:none;cursor:pointer;width:44px;height:44px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;margin-right:-10px"><span data-bar="1" style="width:22px;height:2px;border-radius:2px;background:#1C1410;display:block;transition:transform .3s ease,opacity .3s ease"></span><span data-bar="2" style="width:22px;height:2px;border-radius:2px;background:#1C1410;display:block;transition:opacity .2s ease"></span><span data-bar="3" style="width:22px;height:2px;border-radius:2px;background:#1C1410;display:block;transition:transform .3s ease"></span></summary>
+        <div style="position:fixed;top:64px;right:0;bottom:0;width:min(86vw,380px);background:#FBF8F1;border-left:1px solid rgba(28,20,16,0.2);box-shadow:0 0 0 100vmax rgba(28,20,16,0.4);padding:16px 28px 32px;display:flex;flex-direction:column;z-index:50;overflow-y:auto">
+          <div style="padding:8px 0 6px;font-size:12px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#6B5E54">About</div>
+          <a href="About.dc.html" style="padding:10px 0 10px 14px;font-size:18px;font-weight:500">About Pitchvilla</a>
+          <a href="Apply.dc.html" style="padding:10px 0 10px 14px;font-size:18px;font-weight:500">Apply</a>
+          <a href="Interview Prep.dc.html" style="padding:10px 0 10px 14px;font-size:18px;font-weight:500">Interview Guide</a>
+          <a href="Pitchvilla Website v4.dc.html#faq" style="padding:10px 0 18px 14px;font-size:18px;font-weight:500;border-bottom:1px solid rgba(28,20,16,0.14)">FAQ</a>
+          <a href="Pitchvilla Website v4.dc.html" style="padding:18px 0;border-bottom:1px solid rgba(28,20,16,0.14);font-size:24px;font-weight:600;letter-spacing:-0.02em">Home</a>
+          <div style="padding:18px 0 6px;font-size:12px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#6B5E54">Services</div>
+          <details style="padding-left:14px"><summary style="list-style:none;cursor:pointer;padding:10px 0;font-size:18px;font-weight:500;display:flex;justify-content:space-between;align-items:center">Launch<svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M3.5 6l4.5 4.5L12.5 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></summary><div style="display:flex;flex-direction:column;padding:0 0 8px 14px"><a href="Idea Validation.dc.html" style="padding:8px 0;font-size:15px;color:#4A3F37">Idea Validation</a><a href="Launch Your Startup.dc.html" style="padding:8px 0;font-size:15px;color:#4A3F37">Launch Your Startup</a><a href="Pitch Deck Creation.dc.html" style="padding:8px 0;font-size:15px;color:#4A3F37">Pitch Deck Creation</a></div></details>
+          <details style="padding-left:14px"><summary style="list-style:none;cursor:pointer;padding:10px 0;font-size:18px;font-weight:500;display:flex;justify-content:space-between;align-items:center">Grow<svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M3.5 6l4.5 4.5L12.5 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></summary><div style="display:flex;flex-direction:column;padding:0 0 8px 14px"><a href="Business Strategy.dc.html" style="padding:8px 0;font-size:15px;color:#4A3F37">Business Strategy</a><a href="Financial Analysis.dc.html" style="padding:8px 0;font-size:15px;color:#4A3F37">Financial Analysis</a><a href="Digital Marketing.dc.html" style="padding:8px 0;font-size:15px;color:#4A3F37">Digital Marketing</a><a href="Hiring and Team Building.dc.html" style="padding:8px 0;font-size:15px;color:#4A3F37">Hiring &amp; Team Building</a></div></details>
+          <details style="padding-left:14px;border-bottom:1px solid rgba(28,20,16,0.14);padding-bottom:8px"><summary style="list-style:none;cursor:pointer;padding:10px 0;font-size:18px;font-weight:500;display:flex;justify-content:space-between;align-items:center">Raise<svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M3.5 6l4.5 4.5L12.5 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></summary><div style="display:flex;flex-direction:column;padding:0 0 8px 14px"><a href="Investor Readiness.dc.html" style="padding:8px 0;font-size:15px;color:#4A3F37">Investor Readiness</a><a href="Pitch to Investors.dc.html" style="padding:8px 0;font-size:15px;color:#4A3F37">Pitch to Investors</a></div></details>
+          <a href="Blog.dc.html" style="padding:18px 0;border-bottom:1px solid rgba(28,20,16,0.14);font-size:24px;font-weight:600;letter-spacing:-0.02em">Blog</a>
+        </div>
+      </details>
+    </div>
+  </header>
+
+  <section style="max-width:1280px;margin:0 auto;padding:clamp(56px,9vh,96px) clamp(24px,6vw,96px) 0">
+    <div data-line="1" style="font-size:12px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase">Pitchvilla Blog</div>
+    <div style="margin-top:20px;display:flex;flex-wrap:wrap;gap:24px 64px;align-items:flex-end;justify-content:space-between">
+      <h1 data-line="1" style="flex:1 1 520px;margin:0;font-size:clamp(30px,3vw,40px);line-height:1.02;font-weight:600;letter-spacing:-0.035em">Notes from founders<br>who <span data-mark="1" data-mark-delay="1.1" style="background:linear-gradient(#FFCC00,#FFCC00) no-repeat 0 100% / 100% 0.1em;padding-bottom:0.02em">do the work.</span></h1>
+      <p data-line="1" style="flex:0 1 360px;margin:0;font-size:16px;line-height:1.6;padding-bottom:10px">Practical writing on strategy, pricing, marketing and systems, from the Pitchvilla team and faculty.</p>
+    </div>
+  </section>
+
+  <section style="max-width:1280px;margin:0 auto;padding:clamp(48px,7vh,72px) clamp(24px,6vw,96px) 0">
+    <a href="#" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(24px,4vw,56px);align-items:end">
+      <div data-zoom="1" style="aspect-ratio:3/2;position:relative;background:#E9E1CF"><image-slot id="blog-featured" shape="rect" placeholder="Featured post image" style="position:absolute;inset:0;width:100%;height:100%;display:block"></image-slot></div>
+      <div data-stagger="1" style="display:flex;flex-direction:column;gap:12px;padding-bottom:4px">
+        <div style="font-size:12px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase">Featured · {{ featured.cat }} <span style="opacity:0.55">· {{ featured.date }} · {{ featured.read }}</span></div>
+        <h2 style="margin:0;font-size:clamp(24px,2.3vw,32px);line-height:1.15;font-weight:600;letter-spacing:-0.015em;text-wrap:pretty">{{ featured.title }}</h2>
+        <p style="margin:0;font-size:15px;line-height:1.6;max-width:440px;opacity:0.8">{{ featured.desc }}</p>
+      </div>
+    </a>
+  </section>
+
+  <section style="max-width:1280px;margin:0 auto;padding:clamp(72px,10vh,112px) clamp(24px,6vw,96px) 120px">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;padding-bottom:20px;border-bottom:1px solid rgba(28,20,16,0.2)">
+      <h2 style="margin:0;font-size:24px;font-weight:600;letter-spacing:-0.02em">All articles</h2>
+      <div data-filters="1" style="display:flex;gap:24px;flex-wrap:wrap;font-size:14px;font-weight:500">
+        <sc-for list="{{ filters }}" as="f" hint-placeholder-count="5">
+          <button onClick="{{ f.onClick }}" style="all:unset;cursor:pointer;padding:4px 0;background:linear-gradient(#FFCC00,#FFCC00) no-repeat 0 100% / {{ f.w }} 3px;transition:background-size .6s cubic-bezier(.22,.61,.36,1)">{{ f.label }}</button>
+        </sc-for>
+      </div>
+    </div>
+    <div data-stagger="1">
+    <sc-for list="{{ posts }}" as="p" hint-placeholder-count="6">
+      <a data-post-row="1" href="#" style="display:grid;grid-template-columns:140px minmax(0,1fr) 180px;gap:32px;align-items:center;padding:28px 20px;margin:0 -20px;border-bottom:1px solid rgba(28,20,16,0.16);border-radius:8px;transition:background .5s ease" style-hover="background:#F3EDE0">
+        <div style="font-size:13px;line-height:1.6"><div style="font-weight:600">{{ p.cat }}</div><div style="opacity:0.6">{{ p.date }}</div></div>
+        <div style="min-width:0"><h3 style="margin:0;font-size:22px;font-weight:600;letter-spacing:-0.02em;line-height:1.25;text-wrap:pretty">{{ p.title }}</h3><p style="margin:8px 0 0;font-size:15px;line-height:1.6;max-width:560px">{{ p.desc }}</p></div>
+        <div style="aspect-ratio:3/2;position:relative;background:#E9E1CF"><image-slot id="{{ p.slot }}" shape="rect" placeholder="Image" style="position:absolute;inset:0;width:100%;height:100%;display:block"></image-slot></div>
+      </a>
+    </sc-for>
+    </div>
+    <sc-if value="{{ empty }}" hint-placeholder-val="{{ false }}"><p style="margin:32px 0 0;font-size:15px">No articles in this category yet.</p></sc-if>
+  </section>
+
+  <section style="background:#FFCC00">
+    <div data-cta="1" style="max-width:1280px;margin:0 auto;padding:96px clamp(24px,6vw,96px);display:flex;flex-wrap:wrap;gap:32px 64px;align-items:flex-end;justify-content:space-between">
+      <div style="flex:1 1 520px;min-width:0">
+        <div style="font-size:12px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase">100X Forge · Cohort 01 · 30 seats</div>
+        <h2 style="margin:16px 0 0;font-size:clamp(30px,3vw,40px);line-height:1.02;font-weight:600;letter-spacing:-0.035em">Ready to stop running everything alone?</h2>
+      </div>
+      <a href="Apply.dc.html?type=apply" style="background:#1C1410;color:#FBF8F1;border-radius:8px;padding:18px 28px;font-size:16px;font-weight:600" style-hover="color:#FFCC00">Apply</a>
+    </div>
+  </section>
+
+  <footer style="background:#FBF8F1;border-top:1px solid rgba(28,20,16,0.2)">
+    <div data-foot="1" style="max-width:1280px;margin:0 auto;padding:72px clamp(24px,6vw,96px) 32px;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:32px">
+      <div style="display:flex;flex-direction:column;gap:10px"><span style="font-size:19px;font-weight:600;display:flex;align-items:center;gap:8px"><span style="width:12px;height:12px;border-radius:50%;background:#FFCC00;display:block"></span>pitchvilla</span><span style="font-size:14px;line-height:1.55">[Office address]<br>[City], India</span></div>
+      <div style="display:flex;flex-direction:column;gap:10px;font-size:14px"><span style="font-size:12px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;opacity:0.6">Pitchvilla</span><a href="About.dc.html">About</a><a href="#">Team</a><a href="#">Experts &amp; CXOs</a><a href="#">Careers</a><a href="#">Contact</a></div>
+      <div style="display:flex;flex-direction:column;gap:10px;font-size:14px"><span style="font-size:12px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;opacity:0.6">Community</span><a href="Pitchvilla Website v4.dc.html#stories">Founder stories</a><a href="#">Become a mentor</a><a href="#">Book the studio</a><a href="#">Workspace</a></div>
+      <div style="display:flex;flex-direction:column;gap:10px;font-size:14px"><span style="font-size:12px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;opacity:0.6">Resources</span><a href="Blog.dc.html">Blog</a><a href="#">White paper</a><a href="#">Privacy policy</a><a href="#">Terms</a></div>
+      <div style="display:flex;flex-direction:column;gap:10px;font-size:14px"><span style="font-size:12px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;opacity:0.6">Follow</span><a href="#">Instagram</a><a href="#">LinkedIn</a><a href="#">YouTube</a><a href="#">X</a></div>
+    </div>
+    <div data-mt="1" data-mb="1" style="max-width:1280px;margin:0 auto;padding:20px clamp(24px,6vw,96px) 32px;border-top:1px solid rgba(28,20,16,0.2);font-size:13px">© 2026 Pitchvilla Startup School</div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { filter: 'All' };
+
+  componentDidMount() {
+    this.t = setTimeout(() => { if (window.PVMotion) this.stop = window.PVMotion(); }, 60);
+  }
+  componentWillUnmount() { clearTimeout(this.t); this.stop && this.stop(); }
+  renderVals() {
+    const all = [
+      { cat:'Strategy', date:'Sep 2026', read:'6 min read', title:'Why your business stops growing when you do', desc:'The founder bottleneck, how to spot it early and the first three things to hand off.' },
+      { cat:'Pricing', date:'Sep 2026', title:'How to price when every customer asks for a discount', desc:'A simple method to set prices from costs, value and competition, and hold them.' },
+      { cat:'Marketing', date:'Aug 2026', title:'Five reels a month: a content plan a small team can keep', desc:'What to post, how to batch it and how to tell if it is working.' },
+      { cat:'Systems', date:'Aug 2026', title:'Your first SOP: writing down the job only you know how to do', desc:'A one-page template for documenting a process so someone else can run it.' },
+      { cat:'Strategy', date:'Jul 2026', title:'A business plan you will actually use', desc:'Replace the 40-page document with a one-page plan you review every month.' },
+      { cat:'Systems', date:'Jul 2026', title:'Choosing a CRM when you have never used one', desc:'What a small business needs from a CRM and what it can ignore.' },
+      { cat:'Marketing', date:'Jun 2026', title:'Your website has one job', desc:'How to turn a brochure site into a page that brings in leads.' }
+    ].map((p, i) => ({ ...p, slot:`blog-post-${i}` }));
+    const featured = all[0];
+    const rest = all.slice(1);
+    const f = this.state.filter;
+    const posts = f === 'All' ? rest : rest.filter(p => p.cat === f);
+    const filters = ['All','Strategy','Pricing','Marketing','Systems'].map(label => ({ label, w: label === f ? '100%' : '0%', onClick: () => this.setState({ filter: label }) }));
+    return { featured, posts, filters, empty: posts.length === 0 };
+  }
+}
+</script>
+</body>
+</html>
